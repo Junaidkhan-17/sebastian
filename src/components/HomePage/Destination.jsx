@@ -1,7 +1,7 @@
 import React from "react";
 import "./Destination.css";
 import russiaflag from "../../assets/russiaflag.png";
-import kazakhstanflag from "../../assets/kazakhstanflag.png";
+import Kazakhstanflag from "../../assets/Kazakhstanflag.png";
 import philippineflag from "../../assets/philippineflag.png";
 import germanyflag from "../../assets/germanyflag.png";
 import nepalflag from "../../assets/nepalflag.png";
@@ -17,7 +17,7 @@ import australiaflag from "../../assets/australiaflag.png";
 
 const countries = [
   { name: "Russia", img: russiaflag }, // now normal
-  { name: "Kazakhstan", img: kazakhstanflag },
+  { name: "Kazakhstan", img: Kazakhstanflag },
   { name: "Philippines", img: philippineflag},
   { name: "Germany", img: germanyflag },
   { name: "Nepal", img: nepalflag },
