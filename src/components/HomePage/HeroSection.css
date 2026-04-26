@@ -1,0 +1,177 @@
+/* ================= HERO SECTION ================= */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  margin-top: -88px;
+  padding-top: 88px;
+}
+
+/* ================= LEFT GRADIENT OVERLAY ================= */
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  /* Left → Center gradient */
+  background: linear-gradient(
+    90deg,
+    rgba(3, 12, 21, 0.933) 0%,
+    rgba(3, 14, 24, 0.85) 35%,
+    rgba(0, 0, 0, 0.452) 65%,
+    rgba(4, 21, 36, 0) 75%,
+    transparent 100%
+  );
+
+  z-index: 1;
+}
+
+/* ================= CONTENT ================= */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(1rem, 4vw, 3rem);
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+  padding-left: clamp(1rem, 4vw, 4rem);
+  padding-right: clamp(1rem, 2vw, 2rem);
+  text-align: left;
+}
+
+.hero-left {
+  flex: 0 1 62%;
+  max-width: 760px;
+}
+
+/* ================= TITLE ================= */
+.hero-title {
+  font-size: 3.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+  margin-bottom: 15px;
+  align-items: flex-start;
+  font-family: 'CabinetGrotesk', sans-serif;
+  font-style: regular;
+}
+
+/* Underline */
+.hero-title .underline {
+  display: block;
+  width: 620px;
+  height: 1px;
+  background: #daaa1b;
+  margin-top: 1px;
+  border-radius: 10px;
+}
+
+/* ================= TEXT ================= */
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin-bottom: 12px;
+  font-family: 'CabinetGrotesk', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #cfcfcf;
+  margin-bottom: 35px;
+}
+
+/* ================= STATS ================= */
+.stats-row {
+  margin-top: 70px;
+}
+
+/* Card */
+.stat-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  padding: 22px;
+  border-radius: 38px 0px;
+  text-align: left;
+  transition: all 0.35s ease;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-left: #f4c430 6px solid;
+  border-bottom: #f4c430 6px solid;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: 'CabinetGrotesk', sans-serif;
+}
+
+/* Icon */
+.stat-card i {
+  font-size: 46px;
+  color: #f4c430;
+  min-width: 40px;
+}
+
+/* Text */
+.stat-card h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  font-family: 'CabinetGrotesk', sans-serif;
+}
+
+.stat-card p {
+  font-size: 20px;
+  color: #ccc;
+  margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+/* Hover */
+.stat-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  border-color: rgba(255,255,255,0.3);
+  border-top: #ffbf00 6px solid;
+  border-right: #ffbf00 6px solid ; 
+}
+
+
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .hero-section {
+    margin-top: -82px;
+    padding-top: 82px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .stat-card {
+    text-align: left;
+    flex-direction: row;
+  }
+}

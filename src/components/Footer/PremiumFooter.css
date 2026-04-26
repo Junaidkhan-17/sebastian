@@ -1,0 +1,203 @@
+.pf-footer {
+  position: relative;
+  padding: 80px 0 30px;
+
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+
+  color: #cbd5e1;
+  overflow: hidden;
+}
+
+/* TOP GLOW BORDER */
+.pf-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+
+  background: linear-gradient(to right, #0ea5e9, #22c55e);
+}
+
+/* LOGO */
+.pf-logo {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.footer-logo {
+    height: 100px;
+    width: 25%;
+}
+
+.footer-logo-name {
+    height: 80px;
+    width: 80%;
+    margin-top:10px;
+}
+
+/* DESC */
+.pf-desc {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-top: 10px;
+  color: #94a3b8;
+    font-family: 'CabinetGrotesk', sans-serif;
+}
+
+/* TITLE */
+.pf-title {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-family: 'CabinetGrotesk', sans-serif;
+}
+
+/* LINKS */
+.pf-links {
+  list-style: none;
+  padding: 0;
+    font-family: 'CabinetGrotesk', sans-serif;
+}
+
+.pf-links li {
+  margin-bottom: 10px;
+}
+
+.pf-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* 🔥 UNDERLINE ANIMATION */
+.pf-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #0ea5e9, #22c55e);
+
+  transition: 0.3s;
+}
+
+.pf-links a:hover {
+  color: #ffffff;
+}
+
+.pf-links a:hover::after {
+  width: 100%;
+}
+
+/* CONTACT */
+.pf-contact {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.pf-contact i {
+  margin-right: 8px;
+  color: #22c55e;
+  font-size: 1.2rem;
+}
+
+/* SOCIAL */
+.pf-social {
+  margin-top: 15px;
+    font-size: 2rem;
+
+}
+
+.pf-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  margin-right: 10px;
+
+  background: rgba(255,255,255,0.08);
+  color: #cbd5e1;
+
+  transition: 0.3s;
+}
+
+/* 🔥 HOVER EFFECT */
+.pf-social a:hover {
+  background: linear-gradient(to right, #0ea5e9, #22c55e);
+  color: white;
+
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 25px rgba(14,165,233,0.3);
+}
+
+/* BOTTOM */
+.pf-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255,255,255,0.1);
+
+  text-align: center;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .pf-footer {
+    text-align: center;
+  }
+
+  .pf-social {
+    justify-content: center;
+  }
+}
+
+.powered-logo {
+  position: absolute;
+  bottom: 125px;
+  right: 20px;
+  text-align: right;
+}
+
+.powered-logo h4 {
+  font-size: 12px;
+  margin: 0;
+  color: #aaa;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.powered-logo img {
+  width: 120px;
+  height: auto;
+  margin-top: 5px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.powered-logo img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .powered-logo {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+  }
+}

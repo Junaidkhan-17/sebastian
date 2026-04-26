@@ -1,0 +1,97 @@
+.mbbs-section {
+  padding: 100px 0;
+  background: linear-gradient(to right, #eef2ff, #f8fafc);
+  margin-top: -38px;
+}
+
+/* MAIN TITLE */
+.mbbs-main-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 40px;
+  font-family: 'CabinetGrotesk', sans-serif;
+}
+
+/* CARD */
+.mbbs-card {
+  position: relative;
+  display: flex;
+  gap: 20px;
+
+  padding: 40px;
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+
+  transition: 0.4s;
+}
+
+.mbbs-card:hover {
+  transform: translateY(-5px);
+  border-left: rgb(255, 183, 0) 3px solid;
+  border-bottom: rgb(255, 183, 0) 6px solid;
+}
+
+/* ACCENT LINE */
+.mbbs-accent {
+  width: 6px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #22c55e, #16a34a);
+}
+
+/* CONTENT */
+.mbbs-content {
+  flex: 1;
+}
+
+.mbbs-subtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0d3b66;
+  margin-bottom: 15px;
+  font-family: 'CabinetGrotesk', sans-serif;
+}
+
+.mbbs-content p {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+/* MINI HEADING */
+.mbbs-mini-heading {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-top: 15px;
+  color: #1e3a8a;
+  font-family: 'CabinetGrotesk', sans-serif;
+}
+
+/* LIST */
+.mbbs-list {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.mbbs-list li {
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .mbbs-card {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .mbbs-main-title {
+    font-size: 2rem;
+  }
+}

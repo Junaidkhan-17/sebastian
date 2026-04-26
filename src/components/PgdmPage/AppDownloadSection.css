@@ -1,0 +1,127 @@
+.pgdm-app-download-section {
+  padding: 80px 0;
+  background:
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.9) 45%,
+      rgba(255, 255, 255, 0.2) 65%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    var(--pgdm-bg-image);
+  background-size: 100% 100%, auto 100%;
+  background-position: left top, right center;
+  background-repeat: no-repeat;
+}
+
+/* TAG */
+.pgdm-app-tagline {
+  color: orange;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: 'CabinetGrotesk', sans-serif;
+}
+
+/* TITLE */
+.pgdm-app-title {
+  font-size: 2.4rem;
+  font-family: 'CabinetGrotesk', sans-serif;
+  font-weight: 700;
+  color: #0d3b66;
+  margin: 10px 0;
+}
+
+/* DESC */
+.pgdm-app-desc {
+  color: #28292b;
+  margin-bottom: 20px;
+}
+
+/* STORE */
+.store-buttons img {
+  width: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.store-buttons img:hover {
+  transform: scale(1.5);
+}
+
+/* QR */
+.qr-card {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  padding: 15px;
+  border-radius: 15px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.qr-card:hover {
+  transform: translateY(-5px);
+}
+
+/* PHONE */
+.phone-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.phone-wrapper img {
+  max-width: 320px;
+  transition: 0.4s;
+}
+
+.phone-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+/* FLOATING COINS */
+.coin {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: gold;
+  border-radius: 50%;
+  animation: float 3s infinite ease-in-out;
+}
+
+.coin1 {
+  top: 20%;
+  left: -20px;
+}
+
+.coin2 {
+  top: 50%;
+  right: -20px;
+}
+
+.coin3 {
+  bottom: 10%;
+  left: 10%;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .pgdm-app-title {
+    font-size: 26px;
+  }
+
+  .phone-wrapper {
+    margin-top: 30px;
+  }
+}

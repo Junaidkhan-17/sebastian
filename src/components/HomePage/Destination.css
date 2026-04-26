@@ -1,0 +1,141 @@
+/* SECTION */
+.dest-section {
+  padding: 80px 0;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(30, 58, 138, 0.12), transparent 45%),
+    radial-gradient(circle at 88% 10%, rgba(14, 165, 233, 0.18), transparent 42%),
+    linear-gradient(to bottom, #f3f7ff, #eef3ff);
+  overflow: hidden;
+}
+
+/* TITLE */
+.dest-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #0d3b66;
+}
+
+.dest-sub {
+  color: #6c757d;
+}
+
+/* DIVIDER */
+.divider {
+  width: 120px;
+  height: 4px;
+  margin: 15px auto;
+  border-radius: 20px;
+  background: linear-gradient(to right, #1e3a8a, #0ea5e9);
+}
+
+/* TRACK */
+.flag-track-wrap {
+  position: relative;
+  overflow: hidden;
+  padding: 22px 0 8px;
+}
+
+.flag-track-wrap::before,
+.flag-track-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 90px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.flag-track-wrap::before {
+  left: 0;
+  background: linear-gradient(to right, #f3f7ff 0%, rgba(243, 247, 255, 0) 100%);
+}
+
+.flag-track-wrap::after {
+  right: 0;
+  background: linear-gradient(to left, #eef3ff 0%, rgba(238, 243, 255, 0) 100%);
+}
+
+.flag-track {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  width: max-content;
+  animation: destinationScroll 55s linear infinite;
+  will-change: transform;
+}
+
+.flag-item {
+  width: 200px;
+  flex: 0 0 auto;
+  text-align: center;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.flag-item:hover {
+  transform: translateY(-6px);
+
+}
+
+/* IMAGE */
+.circle-img {
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 3px solid white;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  box-shadow: 0 10px 24px rgba(13, 59, 102, 0.14);
+}
+
+.flag-item:hover .circle-img {
+  transform: scale(1.04);
+  box-shadow: 0 16px 30px rgba(13, 59, 102, 0.22);
+}
+
+.flag-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0d3b66;
+  font-family: "CabinetGrotesk", sans-serif;
+  margin: 0;
+}
+
+/* IMAGE ZOOM */
+.circle-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.flag-item:hover .circle-img img {
+  transform: scale(1.2);
+}
+
+@keyframes destinationScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .dest-title {
+    font-size: 26px;
+  }
+
+  .flag-track {
+    gap: 22px;
+    animation-duration: 48s;
+  }
+
+  .flag-item {
+    width: 180px;
+    padding: 8px 6px 12px;
+  }
+}

@@ -1,0 +1,117 @@
+.mba-journey {
+  padding: 90px 0;
+  background: linear-gradient(to bottom, #f1f5f9, #e0e7ff);
+}
+
+/* TITLE */
+.journey-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #0d3b66;
+  font-family: 'CabinetGrotesk', sans-serif;
+}
+
+.journey-tag {
+  color: #071b47;
+  font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'CabinetGrotesk', sans-serif;
+}
+
+/* HORIZONTAL SCROLL */
+.journey-scroll {
+  display: flex;
+  gap: 16px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  overflow: visible;
+  padding-bottom: 0;
+  justify-content: center;
+}
+
+/* Hide scrollbar (clean UI) */
+.journey-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* CARD */
+.journey-card {
+  width: 100%;
+  max-width: 320px;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.4s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  flex: 1 1 280px;
+}
+
+.journey-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+
+/* IMAGE */
+.card-img {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.journey-card:hover img {
+  transform: scale(1.1);
+}
+
+/* BADGE */
+.step-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(to right, #1e3a8a, #0ea5e9);
+  color: white;
+  border-radius: 0px 10px;
+  border-left: gold 3px solid;
+  border-bottom: gold 3px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* CONTENT */
+.card-content {
+  padding: 20px;
+}
+
+.card-content h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #0d3b66;
+  font-size: 1.5rem;
+  font-family: 'CabinetGrotesk', sans-serif;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .journey-title {
+    font-size: 26px;
+  }
+
+  .journey-card {
+    max-width: 100%;
+  }
+}

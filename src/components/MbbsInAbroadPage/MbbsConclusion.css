@@ -1,0 +1,122 @@
+.mbbs-conclusion-section {
+  padding: 100px 0;
+  background: linear-gradient(to right, #eef2ff, #f8fafc);
+  margin-top: -38px;
+}
+
+/* CARD */
+.mbbs-conclusion-card {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+
+  border-radius: 20px;
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+
+  transition: 0.4s;
+}
+
+.mbbs-conclusion-card:hover {
+  transform: translateY(-6px);
+  border-left: rgb(255, 183, 0) 3px solid;
+  border-bottom: rgb(255, 183, 0) 6px solid;
+}
+
+/* ACCENT */
+.mbbs-conclusion-accent {
+  width: 6px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #10b981, #0ea5e9);
+}
+
+/* CONTENT */
+.mbbs-conclusion-content {
+  flex: 1;
+}
+
+/* TITLE */
+.mbbs-conclusion-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0d3b66;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-family: 'CabinetGrotesk', sans-serif;
+}
+
+/* TEXT */
+.mbbs-conclusion-content p {
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+/* DIVIDER */
+.mbbs-conclusion-divider {
+  height: 2px;
+  margin: 20px 0;
+  border-radius: 10px;
+  background: linear-gradient(to right, #10b981, #0ea5e9);
+}
+
+/* CONTACT */
+.mbbs-conclusion-contact {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* CONTACT ITEM */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: rgba(255,255,255,0.7);
+  padding: 10px 16px;
+  border-radius: 12px;
+
+  backdrop-filter: blur(6px);
+
+  transition: 0.3s;
+}
+
+.contact-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ICON */
+.contact-item i {
+  color: #10b981;
+  font-size: 18px;
+}
+
+/* TEXT */
+.contact-item span {
+  font-weight: 600;
+  color: #0d3b66;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .mbbs-conclusion-card {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .mbbs-conclusion-title {
+    font-size: 1.3rem;
+  }
+
+  .mbbs-conclusion-contact {
+    gap: 15px;
+  }
+}

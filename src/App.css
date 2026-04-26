@@ -1,0 +1,36 @@
+.app-main {
+  width: 100%;
+  min-height: calc(100vh - 88px);
+  text-align: left;
+  margin: 0;
+  padding-top: 88px;
+}
+
+.app-main > section {
+  width: 100%;
+}
+
+.app-main > section:not(.hero-section) {
+  padding: 2.5rem clamp(1rem, 5vw, 4rem);
+}
+
+.page-title {
+  margin-bottom: 0.75rem;
+  color: #0d3b66;
+  font-size: clamp(1.8rem, 2.8vw, 2.5rem);
+  font-weight: 700;
+}
+
+.page-subtitle {
+  margin: 0;
+  max-width: 780px;
+  color: #1f2937;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 768px) {
+  .app-main > section:not(.hero-section) {
+    padding: 1.75rem 1rem;
+  }
+}
