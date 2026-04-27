@@ -1,27 +1,24 @@
 .engapp-section {
-  padding: 84px 0 88px;
+  padding: 80px 0;
   background:
-    radial-gradient(circle at 18% 10%, rgba(14, 165, 233, 0.14), transparent 36%),
-    radial-gradient(circle at 88% 84%, rgba(13, 59, 102, 0.1), transparent 35%),
-    linear-gradient(180deg, #f3f8ff 0%, #eef4fd 100%);
-  overflow: hidden;
-}
-
-.engapp-content {
-  max-width: 500px;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(13, 59, 102, 0.12);
-  border-radius: 0 26px;
-  padding: 28px 26px;
-  box-shadow: 0 22px 44px rgba(15, 47, 80, 0.12);
-  backdrop-filter: blur(6px);
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.9) 45%,
+      rgba(255, 255, 255, 0.2) 65%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    var(--engapp-bg-image);
+  background-size: 100% 100%, auto 100%;
+  background-position: left top, right center;
+  background-repeat: no-repeat;
 }
 
 .engapp-badge {
   color: orange;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 1px;
   font-family: "CabinetGrotesk", sans-serif;
 }
 
@@ -30,186 +27,111 @@
   font-family: "CabinetGrotesk", sans-serif;
   font-weight: 700;
   color: #0d3b66;
-  margin: 14px 0 10px;
-  line-height: 1.2;
+  margin: 10px 0;
 }
 
 .engapp-text {
   color: #28292b;
-  margin-bottom: 18px;
-  font-size: 1.02rem;
-}
-
-.engapp-store {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 .engapp-store img {
-  height: 48px;
+  width: 40px;
+  margin-right: 10px;
   cursor: pointer;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  filter: drop-shadow(0 10px 12px rgba(11, 44, 74, 0.16));
+  transition: 0.3s ease-in-out;
 }
 
 .engapp-store img:hover {
-  transform: translateY(-3px) scale(1.04);
+  transform: scale(1.5);
 }
 
 .engapp-qr {
-  margin-top: 16px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 14px;
-  border: 1px solid rgba(13, 59, 102, 0.12);
-  padding: 12px;
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  box-shadow: 0 14px 30px rgba(13, 59, 102, 0.12);
+  margin-top: 20px;
+  margin-left: -20px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  padding: 15px;
+  border-radius: 15px;
+  display: inline-block;
+  transition: 0.3s;
 }
 
-.engapp-qr-title {
-  margin: 0;
-  font-size: 0.98rem;
-  line-height: 1.35;
-  color: #0f2f50;
-  max-width: 170px;
-  font-family: "CabinetGrotesk", sans-serif;
+.engapp-qr:hover {
+  transform: translateY(-5px);
 }
 
 .engapp-qr img {
-  width: 140px;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  height: 5rem;
+  width: auto;
 }
 
-.engapp-visual {
-  position: relative;
-  min-height: 390px;
-  display: grid;
-  place-items: center;
-}
-
-.engapp-visual-glow {
-  position: absolute;
-  inset: auto;
-  width: min(76vw, 430px);
-  height: min(76vw, 430px);
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 35% 35%, rgba(64, 177, 255, 0.45), transparent 55%),
-    radial-gradient(circle at 70% 70%, rgba(13, 59, 102, 0.28), transparent 65%);
-  filter: blur(4px);
-  z-index: 0;
-}
-
-.engapp-phone {
-  position: relative;
-  z-index: 1;
-  width: min(100%, 600px);
-  height: auto;
-  margin: 0;
-  transition: transform 0.4s ease;
-  filter: drop-shadow(0 26px 28px rgba(10, 36, 61, 0.26));
-}
-
-.engapp-phone:hover {
-  transform: translateY(-6px) scale(1.02);
-}
-
-@media (max-width: 1199.98px) {
-  .engapp-title {
-    font-size: 2.08rem;
-  }
-
-  .engapp-visual {
-    min-height: 340px;
-  }
+.engapp-qr-title {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  font-family: "CabinetGrotesk", sans-serif;
 }
 
 @media (max-width: 991.98px) {
   .engapp-section {
-    padding: 76px 0 72px;
+    padding: 70px 0;
+    background-size: cover;
+    background-position: center;
   }
 
   .engapp-content {
     max-width: 100%;
   }
 
-  .engapp-visual {
-    min-height: 300px;
-    margin-top: 8px;
+  .engapp-title {
+    font-size: 2rem;
   }
 
-  .engapp-phone {
-    width: min(100%, 520px);
+  .engapp-qr {
+    margin-left: 0;
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   .engapp-section {
-    padding: 64px 0 62px;
-  }
-
-  .engapp-content {
-    border-radius: 0 20px;
-    padding: 22px 18px;
+    padding: 56px 0;
   }
 
   .engapp-badge {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
   }
 
   .engapp-title {
-    font-size: 1.72rem;
-    margin-top: 10px;
+    font-size: 1.6rem;
   }
 
   .engapp-text {
     font-size: 0.95rem;
   }
 
+  .engapp-store {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
   .engapp-store img {
-    height: 42px;
+    width: 36px;
+    margin-right: 0;
   }
 
   .engapp-qr {
+    margin-left: 0;
     width: 100%;
-    justify-content: space-between;
+    padding: 12px;
+  }
+
+  .engapp-qr img {
+    height: 4.5rem;
   }
 
   .engapp-qr-title {
-    font-size: 0.9rem;
-    max-width: none;
-  }
-
-  .engapp-qr img {
-    width: 106px;
-  }
-
-  .engapp-visual {
-    min-height: 240px;
-  }
-
-  .engapp-visual-glow {
-    width: 300px;
-    height: 300px;
-  }
-}
-
-@media (max-width: 420px) {
-  .engapp-title {
-    font-size: 1.55rem;
-  }
-
-  .engapp-qr {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .engapp-qr img {
-    width: 120px;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
   }
 }

@@ -8,19 +8,23 @@ import enggdownloadimage from "../../assets/enggdownloadimage.png";
 
 function EngAppDownload() {
   return (
-    <section className="engapp-section">
+    <section
+      className="engapp-section"
+      style={{ "--engapp-bg-image": `url(${enggdownloadimage})` }}
+    >
       <div className="container">
-        <div className="row align-items-center g-5">
-          {/* LEFT CONTENT */}
+        <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="engapp-content">
               <span className="engapp-badge">ANYTIME. ANYWHERE</span>
 
-              <h2 className="engapp-title">Download App, Apply On The Go!</h2>
+              <h2 className="engapp-title">
+                Download Brochure and Track Admissions On The Go
+              </h2>
 
               <p className="engapp-text">
-                We provide engineering admission guidance for B.Tech and M.Tech
-                programs.
+                Access engineering course details, fee structure, and admission
+                timelines from your phone.
               </p>
 
               <div className="engapp-store">
@@ -41,23 +45,10 @@ function EngAppDownload() {
                 </a>
               </div>
 
-              {/* QR */}
               <div className="engapp-qr">
                 <h4 className="engapp-qr-title">Create Your Web Classes Account</h4>
                 <img src={qrcode} alt="QR Code" />
               </div>
-            </div>
-          </div>
-
-          {/* RIGHT VISUAL */}
-          <div className="col-lg-6">
-            <div className="engapp-visual">
-              <div className="engapp-visual-glow"></div>
-              <img
-                src={enggdownloadimage}
-                alt="phone"
-                className="engapp-phone"
-              />
             </div>
           </div>
         </div>

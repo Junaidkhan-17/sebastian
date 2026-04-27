@@ -16,13 +16,12 @@ function AppDownloadSection() {
           {/* LEFT */}
           <div className="col-lg-6">
             <span className="pgdm-app-tagline">ANYTIME. ANYWHERE</span>
-
             <h2 className="pgdm-app-title">
               Download Brochure and Track Admissions On The Go
             </h2>
 
             <p className="pgdm-app-desc">
-              Access MBA and MCA course details, fee structure, and admission
+              Access MBA, MCA & PGDM course details, fee structure, and admission
               timelines from your phone.
             </p>
 
