@@ -253,25 +253,71 @@
 }
 
 @media (max-width: 991.98px) {
+  .engsup-section {
+    padding: 78px 0;
+  }
+
   .engsup-head h2 {
     font-size: 2rem;
+  }
+
+  .engsup-panel {
+    padding: 14px;
   }
 }
 
 @media (max-width: 575.98px) {
   .engsup-section {
-    padding: 70px 0;
+    padding: 64px 0;
+  }
+
+  .engsup-head h2 {
+    font-size: 1.62rem;
+    line-height: 1.25;
+  }
+
+  .engsup-head p {
+    font-size: 0.95rem;
   }
 
   .engsup-card {
     padding: 22px;
+    border-radius: 0 18px;
   }
 
   .engsup-card h3 {
     font-size: 1.45rem;
   }
 
+  .engsup-actions a {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+  }
+
+  .engsup-panel {
+    padding: 12px;
+    border-radius: 18px;
+  }
+
+  .engsup-faq-header {
+    padding: 14px 14px;
+    gap: 12px;
+  }
+
   .engsup-faq-header h6 {
-    font-size: 1.02rem;
+    font-size: 0.98rem;
+    line-height: 1.35;
+  }
+
+  .engsup-faq-header i {
+    width: 26px;
+    min-width: 26px;
+    height: 26px;
+    font-size: 0.82rem;
+  }
+
+  .engsup-faq-body p {
+    padding: 0 14px 14px;
+    font-size: 0.92rem;
   }
 }

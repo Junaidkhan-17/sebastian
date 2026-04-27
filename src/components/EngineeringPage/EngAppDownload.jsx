@@ -1,8 +1,6 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
 import React from "react";
 import "./EngAppDownload.css";
-import coding from "../../assets/coding.jpg"; // replace
-import coding2 from "../../assets/coding2.jpg"; // replace
 import qrcode from "../../assets/qrcode.png";
 import appstore from "../../assets/appstore.png";
 import googleplay from "../../assets/googleplay.png";
@@ -45,6 +43,7 @@ function EngAppDownload() {
 
               {/* QR */}
               <div className="engapp-qr">
+                <h4 className="engapp-qr-title">Create Your Web Classes Account</h4>
                 <img src={qrcode} alt="QR Code" />
               </div>
             </div>
@@ -53,6 +52,7 @@ function EngAppDownload() {
           {/* RIGHT VISUAL */}
           <div className="col-lg-6">
             <div className="engapp-visual">
+              <div className="engapp-visual-glow"></div>
               <img
                 src={enggdownloadimage}
                 alt="phone"
