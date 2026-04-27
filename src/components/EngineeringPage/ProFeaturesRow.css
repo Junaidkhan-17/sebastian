@@ -197,6 +197,55 @@
 }
 
 /* RESPONSIVE */
+@media (max-width: 991.98px) {
+  .profeat-section {
+    padding: 78px 0;
+  }
+
+  .profeat-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .profeat-image-wrap {
+    justify-content: center;
+    margin-top: 24px;
+  }
+
+  .profeat-image {
+    width: 100%;
+    max-width: 500px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .profeat-section {
+    padding: 62px 0;
+  }
+
+  .profeat-title {
+    font-size: 1.85rem;
+  }
+
+  .profeat-card {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .profeat-card-img {
+    flex: 0 0 84%;
+  }
+
+  .profeat-img-wrap {
+    height: 210px;
+  }
+
+  .profeat-content h5,
+  .profeat-body h5 {
+    font-size: 1.2rem;
+  }
+}
 
 
 
