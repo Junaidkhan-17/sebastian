@@ -91,14 +91,3 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 26px;
-  }
-
-  .feature-card-premium {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-}

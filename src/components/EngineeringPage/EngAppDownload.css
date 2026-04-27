@@ -2,6 +2,7 @@
 .engapp-section {
   padding: 100px 0;
   background: linear-gradient(to right, #eef2f7, #f8fafc);
+  margin-bottom: -30px;
 }
 
 /* CONTENT */
@@ -11,24 +12,26 @@
 
 /* BADGE */
 .engapp-badge {
-  font-size: 13px;
+  color: orange;
+  font-size: 1.6rem;
   font-weight: 700;
-  color: #1e3a8a;
   letter-spacing: 1px;
+  font-family: 'CabinetGrotesk', sans-serif;
 }
 
 /* TITLE */
 .engapp-title {
-  font-size: 36px;
+  font-size: 2.4rem;
+  font-family: 'CabinetGrotesk', sans-serif;
   font-weight: 700;
-  margin: 15px 0;
-  color: #0f172a;
+  color: #0d3b66;
+  margin: 10px 0;
 }
 
 /* TEXT */
 .engapp-text {
-  color: #6b7280;
-  font-size: 16px;
+  color: #28292b;
+  margin-bottom: 20px;
 }
 
 /* STORE BUTTONS */
@@ -54,6 +57,7 @@
 }
 
 .engapp-qr img {
+
   width: 140px;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
@@ -67,10 +71,11 @@
 
 /* PHONE */
 .engapp-phone {
-  width: 260px;
-  border-radius: 30px;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+  margin-bottom: -55px;
+  width: 580px;
+  height: 430px;
   transition: 0.4s;
+  margin-left: 150px;
 }
 
 .engapp-phone:hover {
@@ -103,21 +108,3 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 992px) {
-  .engapp-title {
-    font-size: 26px;
-  }
-
-  .engapp-content {
-    text-align: center;
-    margin: auto;
-  }
-
-  .engapp-store {
-    justify-content: center;
-  }
-
-  .engapp-visual {
-    margin-top: 40px;
-  }
-}

@@ -118,27 +118,5 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 992px) {
-  .signup-card {
-    padding: 30px;
-  }
 
-  .signup-title {
-    font-size: 26px;
-  }
 
-  .feature-box {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-@media (max-width: 576px) {
-  .signup-title {
-    font-size: 22px;
-  }
-
-  .signup-btn {
-    width: 100%;
-  }
-}

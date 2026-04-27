@@ -1,518 +1,207 @@
-/* Global Responsive Baseline */
+/* Global responsiveness layer without altering section width/height declarations */
 html,
 body {
   overflow-x: hidden;
 }
 
+#root {
+  width: 100%;
+  max-width: 100%;
+}
+
 img,
+svg,
 video,
-canvas,
-svg {
+canvas {
   max-width: 100%;
   height: auto;
 }
 
-.app-main,
-section,
-.container,
-.container-fluid,
-.row {
-  max-width: 100%;
-}
-
-/* Keep decorative wide lines from causing overflow */
-.hero-title .underline,
-.engf-title::after {
-  max-width: 100%;
-}
-
-/* Smooth mobile/tablet navbar collapse */
 @media (max-width: 991.98px) {
-  .custom-navbar .navbar-collapse {
-    display: block !important;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    visibility: hidden;
-    transform: translateY(-6px);
-    transition: max-height 0.35s ease, opacity 0.3s ease, transform 0.3s ease,
-      visibility 0.3s ease;
-  }
-
-  .custom-navbar .navbar-collapse.show,
-  .custom-navbar .navbar-collapse.collapsing {
-    max-height: 70vh;
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-}
-
-/* =========================
-   XS (<576px)
-   ========================= */
-@media (max-width: 575.98px) {
   .app-main {
-    padding-top: 82px;
+    min-height: calc(100vh - 80px);
+    padding-top: 80px;
+  }
+
+  .app-main > section:not(.hero-section) {
+    padding: 2rem 1rem;
+  }
+
+  .container,
+  .container-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .custom-navbar {
-    border-radius: 0 0 16px 16px;
+    border-radius: 20px 0;
+    padding: 8px 0;
   }
 
   .logo-image {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
   }
 
   .logo-image-name {
     height: 30px;
     width: auto;
     max-width: 140px;
-    margin-left: 2px;
+  }
+
+  .custom-navbar .navbar-collapse {
+    margin-top: 10px;
+    border-radius: 14px;
+    padding: 12px;
+    background: rgba(7, 20, 33, 0.88);
+    backdrop-filter: blur(8px);
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link,
+  .contact-btn {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .hero-content,
+  .hero-actions,
+  .hero-features,
+  .stats-row,
+  .mba-hero-actions,
+  .store-buttons,
+  .engapp-store,
+  .engv2-store-btns {
+    flex-wrap: wrap;
+  }
+
+  .hero-features,
+  .top-row,
+  .featured-cards-row {
+    gap: 12px;
+  }
+
+  .hero-title .underline {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-right,
+  .pgdm-hero-right {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .hex,
+  .pgdm-hex {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    width: min(42vw, 180px);
+    height: auto;
+    aspect-ratio: 22 / 25;
+    transform: none;
+    opacity: 1;
+  }
+
+  .profeat-card,
+  .profeat-card-img,
+  .feature-card,
+  .feature-card-premium,
+  .course-card,
+  .mbbs-destination-card {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .profeat-row {
+    gap: 12px;
+    padding-bottom: 6px;
+  }
+
+  .powered-logo {
+    position: static;
+    margin-top: 8px;
+    text-align: left;
+  }
+
+  .footer-logo {
+    width: 68px;
+    height: auto;
+  }
+
+  .footer-logo-name {
+    width: min(220px, 80%);
+    height: auto;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .app-main {
+    min-height: calc(100vh - 74px);
+    padding-top: 74px;
+  }
+
+  .whatsapp-float {
+    right: 12px;
+    bottom: 12px;
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+  }
+
+  .page-title {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+
+  .page-subtitle {
+    font-size: 0.98rem;
+    line-height: 1.55;
   }
 
   .hero-title,
   .main-title,
   .sub-title,
-  .engf-title,
   .engv2-title,
   .mba-hero-title,
-  .hero-title,
-  .pgdm-app-title,
-  .main-heading,
-  .signup-title,
-  .profeat-title,
-  .journey-title,
-  .dest-title,
-  .dest2-title {
+  .profeat-title {
     line-height: 1.2;
+    font-size: clamp(1.65rem, 7.5vw, 2.4rem);
   }
 
-  .hero-title {
-    font-size: 1.85rem;
+  .hero-subtitle,
+  .hero-desc,
+  .description,
+  .engv2-desc,
+  .mba-hero-desc {
+    font-size: 0.98rem;
   }
 
-  .hero-title .underline {
-    width: min(100%, 18rem);
-  }
-
-  .main-title {
-    font-size: 2rem;
-  }
-
-  .sub-title {
-    font-size: 1.35rem;
-  }
-
-  .engf-title {
-    font-size: 1.7rem;
-  }
-
-  .engf-title::after {
-    width: min(100%, 16rem);
-  }
-
-  .mba-hero-title,
-  .engv2-title,
-  .main-heading {
-    font-size: 1.9rem;
-  }
-
-  .pgdm-hero {
-    min-height: auto;
-    margin-top: -82px;
-    padding: 92px 0 56px;
-  }
-
-  .pgdm-hero .hero-badge {
-    margin-top: 0;
-  }
-
-  .mba-hero-section {
-    min-height: auto;
-    margin-top: -82px;
-    padding: 92px 0 56px;
-  }
-
-  .engv2-hero {
-    margin-top: 0;
-    min-height: auto;
-    padding: 86px 0 54px;
-  }
-
-  .stats-row {
-    margin-top: 1.5rem;
-  }
-
-  .stat-card,
-  .feature-card,
-  .feature-card-premium,
-  .info-card,
-  .support-card,
-  .faq-panel,
-  .mbbs-card,
-  .mbbs-proc-card,
-  .mbbs-scholar-card,
-  .mbbs-factor-card,
-  .mbbs-adv-card,
-  .mbbs-conclusion-card,
-  .uni-card,
-  .career-card,
-  .signup-card,
-  .engsup-card {
-    padding: 1rem;
-  }
-
-  .section-title,
-  .faq-head h2,
-  .content h5,
-  .feature-content h6,
-  .engsup-heading {
-    font-size: 1.35rem;
-  }
-
-  .journey-scroll {
-    margin-top: 1.5rem;
-  }
-
-  .journey-card {
-    flex: 0 0 84vw;
-    max-width: 84vw;
-  }
-
-  .featured-cards-row .feature-card,
-  .profeat-row .profeat-card-img,
-  .profeat-grid .profeat-card {
-    flex: 0 0 84vw;
-    min-width: 84vw;
-    max-width: 84vw;
-  }
-
+  .mba-metric-grid,
+  .mbbs-scholar-grid,
   .profeat-grid {
     grid-template-columns: 1fr;
-    max-width: 100%;
   }
 
-  .profeat-image {
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-  }
-
-  .engf-visual-wrap {
-    margin-top: 1rem;
-  }
-
-  .engf-visual-row {
-    margin-right: 0;
-    justify-content: center;
-  }
-
-  .hero-right,
-  .pgdm-hero-right {
-    width: 100%;
-    height: auto;
-    position: static;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.875rem;
-    justify-items: center;
-    margin-top: 1.25rem;
-  }
-
-  .hero-right .hex,
-  .pgdm-hero-right .pgdm-hex {
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
-    width: min(44vw, 150px);
-    height: min(52vw, 172px);
-  }
-
-  .pgdm-hero-features,
-  .hero-features {
-    margin-top: 1.5rem;
-    padding: 0.875rem;
-  }
-
-  .feature-item {
-    align-items: flex-start;
-  }
-
-  .section-text {
-    font-size: 1rem;
-  }
-
-  .section-text-span {
-    font-size: 1.35rem;
-  }
-
-  .image-wrapper {
-    margin-left: 0;
-  }
-
-  .image-wrapper img {
-    height: auto;
-    margin-top: 1.25rem;
-  }
-
-  .floating-badge {
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    width: auto;
-  }
-
-  .pf-footer {
-    padding: 56px 0 22px;
-  }
-
-  .footer-logo {
-    width: auto;
-    height: 64px;
-  }
-
-  .footer-logo-name {
-    width: auto;
-    max-width: 190px;
-    height: 58px;
-    margin-top: 0;
+  .pf-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
   }
 
   .pf-social a {
-    width: 44px;
-    height: 44px;
-  }
-
-  .powered-logo img {
-    width: 96px;
-  }
-
-  .mbbs-section,
-  .career-section,
-  .uni-section,
-  .mbbs-proc-section,
-  .mbbs-scholar-section,
-  .mbbs-factor-section,
-  .mbbs-adv-section,
-  .mbbs-conclusion-section,
-  .dest2-section {
-    margin-top: 0;
-  }
-}
-
-/* =========================
-   SM (>=576px and <768px)
-   ========================= */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .app-main {
-    padding-top: 84px;
-  }
-
-  .hero-title .underline {
-    width: min(100%, 22rem);
-  }
-
-  .engf-title::after {
-    width: min(100%, 22rem);
-  }
-
-  .hero-right,
-  .pgdm-hero-right {
-    width: 100%;
-    height: auto;
-    position: static;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
-    justify-items: center;
-    margin-top: 1.5rem;
-  }
-
-  .hero-right .hex,
-  .pgdm-hero-right .pgdm-hex {
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
-    width: min(28vw, 180px);
-    height: min(34vw, 210px);
-  }
-
-  .profeat-grid {
-    grid-template-columns: 1fr;
-    max-width: 100%;
-  }
-
-  .profeat-image {
-    width: 100%;
-    max-width: 420px;
-    margin-left: 0;
-  }
-
-  .engf-visual-row {
     margin-right: 0;
-    justify-content: center;
-  }
-
-  .mbbs-section,
-  .career-section,
-  .uni-section,
-  .mbbs-proc-section,
-  .mbbs-scholar-section,
-  .mbbs-factor-section,
-  .mbbs-adv-section,
-  .mbbs-conclusion-section,
-  .dest2-section {
-    margin-top: 0;
-  }
-}
-
-/* =========================
-   MD (>=768px and <992px)
-   ========================= */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .pgdm-hero,
-  .mba-hero-section {
-    min-height: auto;
-  }
-
-  .engv2-hero {
-    margin-top: 0;
-    min-height: auto;
-  }
-
-  .hero-right,
-  .pgdm-hero-right {
-    height: auto;
-  }
-
-  .hero-right .hex,
-  .pgdm-hero-right .pgdm-hex {
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
-    margin: 0 auto;
-  }
-
-  .profeat-grid {
-    grid-template-columns: 1fr;
-    max-width: 100%;
-  }
-
-  .profeat-image {
-    width: 100%;
-    max-width: 460px;
-    margin-left: 0;
-  }
-
-  .engf-visual-row {
-    margin-right: 0;
-  }
-
-  .mbbs-section,
-  .career-section,
-  .uni-section,
-  .mbbs-proc-section,
-  .mbbs-scholar-section,
-  .mbbs-factor-section,
-  .mbbs-adv-section,
-  .mbbs-conclusion-section,
-  .dest2-section {
-    margin-top: 0;
-  }
-}
-
-/* =========================
-   LG (>=992px and <1200px)
-   ========================= */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .hero-title .underline {
-    width: min(100%, 30rem);
-  }
-
-  .engf-title::after {
-    width: min(100%, 32rem);
-  }
-
-  .profeat-grid {
-    max-width: 100%;
-  }
-
-  .profeat-image {
-    width: 100%;
-    max-width: 520px;
-    margin-left: 0;
-  }
-
-  .hero-right,
-  .pgdm-hero-right {
-    transform: scale(0.95);
-    transform-origin: center top;
-  }
-}
-
-/* =========================
-   XL (>=1200px)
-   ========================= */
-@media (min-width: 1200px) {
-  .container {
-    width: min(100%, 1140px);
-  }
-}
-
-/* =========================
-   Touch Devices:
-   convert hover-heavy interactions to tap/active
-   ========================= */
-@media (hover: none) and (pointer: coarse) {
-  .stat-card:hover,
-  .core-card:hover,
-  .feature-card:hover,
-  .feature-card-premium:hover,
-  .info-card:hover,
-  .journey-card:hover,
-  .mbbs-card:hover,
-  .mbbs-proc-card:hover,
-  .mbbs-scholar-box:hover,
-  .mbbs-adv-item:hover,
-  .faq-card:hover,
-  .support-actions a:hover,
-  .pf-social a:hover,
-  .navbar-nav .nav-link:hover,
-  .contact-btn:hover {
-    transform: none;
-    box-shadow: inherit;
-  }
-
-  .stat-card:active,
-  .core-card:active,
-  .feature-card:active,
-  .feature-card-premium:active,
-  .info-card:active,
-  .journey-card:active,
-  .mbbs-card:active,
-  .mbbs-proc-card:active,
-  .mbbs-scholar-box:active,
-  .mbbs-adv-item:active,
-  .faq-card:active,
-  .support-actions a:active,
-  .pf-social a:active,
-  .contact-btn:active,
-  .hero-btn:active,
-  .cta-btn:active,
-  .signup-btn:active,
-  .engv2-btn:active,
-  .mba-btn-primary:active,
-  .btn-primary-custom:active,
-  .btn-outline-custom:active {
-    transform: translateY(-2px) scale(1.01);
-    transition: transform 0.16s ease;
   }
 }

@@ -86,13 +86,3 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .mbbs-adv-card {
-    flex-direction: column;
-    padding: 25px;
-  }
-
-  .mbbs-adv-title {
-    font-size: 1.3rem;
-  }
-}

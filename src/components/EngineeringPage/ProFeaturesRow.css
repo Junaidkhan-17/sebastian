@@ -197,30 +197,9 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .profeat-title {
-    font-size: 26px;
-  }
 
-  .profeat-card {
-    min-width: 260px;
-  }
-}
 
-@media (max-width: 992px) {
-  .profeat-grid {
-    grid-template-columns: 1fr;
-  }
 
-  .profeat-image-wrap {
-    justify-content: center;
-    margin-top: 30px;
-  }
-
-  .profeat-image {
-    max-width: 380px;
-  }
-}
 
 /* 🔥 HORIZONTAL ROW */
 .profeat-row {

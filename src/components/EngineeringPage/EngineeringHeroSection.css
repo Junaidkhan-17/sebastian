@@ -199,34 +199,6 @@
 }
 
 /* MOBILE */
-@media (max-width: 992px) {
 
-  .engv2-title {
-    font-size: 30px;
-  }
 
-  .engv2-phone img {
-    width: 200px;
-    margin-top: 30px;
-  }
 
-  .engv2-strip {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-@media (max-width: 576px) {
-
-  .engv2-title {
-    font-size: 24px;
-  }
-
-  .engv2-desc {
-    font-size: 14px;
-  }
-
-  .engv2-btn {
-    width: 100%;
-  }
-}

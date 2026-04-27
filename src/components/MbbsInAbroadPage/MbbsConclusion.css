@@ -106,17 +106,3 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .mbbs-conclusion-card {
-    flex-direction: column;
-    padding: 25px;
-  }
-
-  .mbbs-conclusion-title {
-    font-size: 1.3rem;
-  }
-
-  .mbbs-conclusion-contact {
-    gap: 15px;
-  }
-}

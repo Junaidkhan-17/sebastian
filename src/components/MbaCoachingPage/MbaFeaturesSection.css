@@ -139,8 +139,4 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 26px;
-  }
-}
+

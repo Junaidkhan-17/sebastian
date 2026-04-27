@@ -1,6 +1,6 @@
 .pf-footer {
   position: relative;
-  padding: 80px 0 30px;
+  padding: 26px 0 20px;
 
   background: linear-gradient(135deg, #0f172a, #1e293b);
 
@@ -142,8 +142,8 @@
 
 /* BOTTOM */
 .pf-bottom {
-  margin-top: 40px;
-  padding-top: 20px;
+  margin-top: 10px;
+  padding-top: 6px;
 
   border-top: 1px solid rgba(255,255,255,0.1);
 
@@ -153,20 +153,12 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .pf-footer {
-    text-align: center;
-  }
 
-  .pf-social {
-    justify-content: center;
-  }
-}
 
 .powered-logo {
   position: absolute;
   bottom: 125px;
-  right: 20px;
+  right: 100px;
   text-align: right;
 }
 
@@ -194,10 +186,3 @@
 }
 
 /* Responsive tweak */
-@media (max-width: 768px) {
-  .powered-logo {
-    position: static;
-    text-align: center;
-    margin-top: 20px;
-  }
-}

@@ -29,8 +29,27 @@
   line-height: 1.65;
 }
 
-@media (max-width: 768px) {
-  .app-main > section:not(.hero-section) {
-    padding: 1.75rem 1rem;
-  }
+.whatsapp-float {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-decoration: none;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.28);
+  z-index: 1100;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.34);
+  color: #ffffff;
 }

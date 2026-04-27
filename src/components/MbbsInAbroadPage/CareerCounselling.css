@@ -79,13 +79,3 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .career-card {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .career-title {
-    font-size: 1.2rem;
-  }
-}

@@ -48,11 +48,11 @@ function PremiumFooter() {
             <h6 className="pf-title">Contact</h6>
 
             <p className="pf-contact">
-              <i className="bi bi-telephone-fill"></i> +91 99704 44580
+              <i className="bi bi-telephone-fill"></i> 9172126359
             </p>
 
             <p className="pf-contact">
-              <i className="bi bi-envelope-fill"></i> info@vmap.co.in
+              <i className="bi bi-envelope-fill"></i> Sebastiangoodwith@gmail.com
             </p>
 
             {/* SOCIAL */}

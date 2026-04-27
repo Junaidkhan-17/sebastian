@@ -85,13 +85,3 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .mbbs-card {
-    flex-direction: column;
-    padding: 25px;
-  }
-
-  .mbbs-main-title {
-    font-size: 2rem;
-  }
-}

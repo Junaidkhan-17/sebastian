@@ -110,12 +110,3 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 992px) {
-  .mbbs-scholar-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .mbbs-scholar-card {
-    flex-direction: column;
-  }
-}

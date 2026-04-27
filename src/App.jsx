@@ -9,6 +9,7 @@ import ContactPage from "./pages/ContactPage";
 import PremiumFooter from "./components/Footer/PremiumFooter";
 
 import "./App.css";
+import "./styles/responsive.css";
 
 function App() {
   return (
@@ -26,6 +27,15 @@ function App() {
         </Routes>
       </main>
       <PremiumFooter />
+      <a
+        className="whatsapp-float"
+        href="https://wa.me/919172126359?text=Hello%2C%20I%20have%20an%20enquiry."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+      >
+        <i className="bi bi-whatsapp" aria-hidden="true"></i>
+      </a>
     </>
   );
 }

@@ -78,13 +78,3 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .mbbs-proc-card {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .mbbs-proc-title {
-    font-size: 1.2rem;
-  }
-}

@@ -65,6 +65,16 @@
   transform: translateY(-5px);
 }
 
+.qr-card img {
+  height: 5rem;
+  width: auto;
+}
+
+.create-account{
+  font-size: 1.6rem;
+  font-family: 'CabinetGrotesk', sans-serif;
+}
+
 /* PHONE */
 .phone-wrapper {
   position: relative;
@@ -116,12 +126,4 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 992px) {
-  .pgdm-app-title {
-    font-size: 26px;
-  }
 
-  .phone-wrapper {
-    margin-top: 30px;
-  }
-}

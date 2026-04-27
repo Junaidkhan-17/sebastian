@@ -93,13 +93,3 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .uni-card {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .uni-title {
-    font-size: 1.2rem;
-  }
-}

@@ -124,18 +124,4 @@
   }
 }
 
-@media (max-width: 768px) {
-  .dest-title {
-    font-size: 26px;
-  }
 
-  .flag-track {
-    gap: 22px;
-    animation-duration: 48s;
-  }
-
-  .flag-item {
-    width: 180px;
-    padding: 8px 6px 12px;
-  }
-}

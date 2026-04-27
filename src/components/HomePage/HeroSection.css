@@ -145,33 +145,4 @@
 
 
 /* ================= MOBILE ================= */
-@media (max-width: 768px) {
-  .hero-section {
-    margin-top: -82px;
-    padding-top: 82px;
-  }
 
-  .hero-content {
-    max-width: 100%;
-    text-align: left;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-subtitle {
-    font-size: 0.95rem;
-  }
-
-  .hero-description {
-    font-size: 0.9rem;
-  }
-
-  .stat-card {
-    text-align: left;
-    flex-direction: row;
-  }
-}

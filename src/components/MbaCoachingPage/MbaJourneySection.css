@@ -106,12 +106,4 @@
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
-  .journey-title {
-    font-size: 26px;
-  }
 
-  .journey-card {
-    max-width: 100%;
-  }
-}

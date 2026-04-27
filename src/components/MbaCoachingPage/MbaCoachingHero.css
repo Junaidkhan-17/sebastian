@@ -267,41 +267,6 @@
   box-shadow: 0 0 0 4px rgba(255, 138, 0, 0.16);
 }
 
-@media (max-width: 992px) {
-  .mba-hero-section {
-    min-height: auto;
-    padding: 78px 0;
-  }
 
-  .mba-hero-title {
-    font-size: 2.55rem;
-  }
 
-  .mba-hero-panel {
-    margin-top: 8px;
-  }
-}
 
-@media (max-width: 768px) {
-  .mba-hero-title {
-    font-size: 2rem;
-  }
-
-  .mba-hero-actions {
-    flex-direction: column;
-  }
-
-  .mba-btn-primary,
-  .mba-btn-ghost {
-    width: 100%;
-  }
-
-  .mba-metric-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .mba-hero-chips span {
-    width: 100%;
-    justify-content: flex-start;
-  }
-}

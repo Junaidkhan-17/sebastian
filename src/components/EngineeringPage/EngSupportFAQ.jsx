@@ -1,91 +1,102 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-
-import React from "react";
+import React, { useState } from "react";
 import "./EngSupportFAQ.css";
 
+const faqs = [
+  {
+    q: "Is this engineering admission guidance legal?",
+    a: "Yes. We follow Indian admission compliance guidelines and provide transparent counselling support for eligible students.",
+  },
+  {
+    q: "Do I need an entrance score to apply?",
+    a: "Many colleges accept entrance scores, but we also guide profile-based admissions depending on eligibility.",
+  },
+  {
+    q: "Can I apply to international engineering colleges?",
+    a: "Yes, we assist with global admissions including documentation, university selection and applications.",
+  },
+  {
+    q: "How early should I begin engineering admission planning?",
+    a: "Ideally, start 6 to 8 months before target deadlines so you can manage exams, shortlisting, documentation, and interviews confidently.",
+  },
+];
+
 function EngSupportFAQ() {
-  const faqs = [
-    {
-      q: "Is this engineering admission guidance legal?",
-      a: "Yes. We follow Indian admission compliance guidelines and provide transparent counselling support for eligible students."
-    },
-    {
-      q: "Do I need an entrance score to apply?",
-      a: "Many colleges accept entrance scores, but we also guide profile-based admissions depending on eligibility."
-    },
-    {
-      q: "Can I apply to international engineering colleges?",
-      a: "Yes, we assist with global admissions including documentation, university selection and applications."
-    }
-  ];
+  const [active, setActive] = useState(0);
 
   return (
     <section className="engsup-section">
       <div className="container">
-        <div className="row align-items-center g-4">
+        <div className="engsup-head text-center">
+          <span className="engsup-label">Student Help Desk</span>
+          <h2>Engineering Admission FAQ and Priority Support</h2>
+          <p>
+            Everything you need to know about engineering admissions, in one
+            place.
+          </p>
+        </div>
 
-          {/* LEFT SUPPORT CARD */}
+        <div className="row g-4 align-items-stretch mt-2">
           <div className="col-lg-4">
-            <div className="engsup-card">
-              <h2 className="engsup-heading">
-                24x7 <br /> Customer Support
-              </h2>
+            <aside className="engsup-card">
+              <span className="engsup-chip">Need quick guidance?</span>
+              <h3>Engineering Admission Support</h3>
 
-              <p className="engsup-small">Have a question?</p>
-              <p className="engsup-link">
-                Go to <span>Support Centre</span> to do a quick search
+              <p className="engsup-copy">
+                Connect with counselors for personalized college shortlisting,
+                documentation support, and admission planning.
               </p>
 
-              <p className="engsup-small mt-3">Need more help?</p>
-              <p className="engsup-link">
-                Raise a <span>support ticket</span><br />
-                We are here to help
-              </p>
+              <ul className="engsup-points">
+                <li>
+                  <i className="bi bi-check2-circle"></i>
+                  Profile-based college mapping
+                </li>
+                <li>
+                  <i className="bi bi-check2-circle"></i>
+                  Entrance and interview preparation
+                </li>
+                <li>
+                  <i className="bi bi-check2-circle"></i>
+                  End-to-end application guidance
+                </li>
+              </ul>
 
-              <div className="engsup-social mt-4">
-                <i className="bi bi-twitter"></i>
-                <i className="bi bi-instagram"></i>
-                <i className="bi bi-youtube"></i>
+              <div className="engsup-actions">
+                <a href="#">Explore Support Center</a>
+                <a href="#">Raise Admission Query</a>
               </div>
-            </div>
+            </aside>
           </div>
 
-          {/* RIGHT FAQ */}
           <div className="col-lg-8">
-            <h3 className="engsup-title">
-              Frequently Asked Questions
-            </h3>
-
-            <div className="accordion" id="engsupAccordion">
+            <div className="engsup-panel">
               {faqs.map((item, i) => (
-                <div className="accordion-item engsup-accordion" key={i}>
-                  <h2 className="accordion-header">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target={`#engsup${i}`}
-                    >
-                      {item.q}
-                    </button>
-                  </h2>
-
-                  <div
-                    id={`engsup${i}`}
-                    className="accordion-collapse collapse"
-                    data-bs-parent="#engsupAccordion"
+                <article
+                  className={`engsup-faq-card ${active === i ? "active" : ""}`}
+                  key={item.q}
+                >
+                  <button
+                    type="button"
+                    className="engsup-faq-header"
+                    onClick={() => setActive(active === i ? -1 : i)}
+                    aria-expanded={active === i}
                   >
-                    <div className="accordion-body">
-                      {item.a}
-                    </div>
+                    <h6>{item.q}</h6>
+                    <i
+                      className={`bi ${active === i ? "bi-dash-lg" : "bi-plus-lg"}`}
+                    ></i>
+                  </button>
+                  <div
+                    className={`engsup-faq-body ${active === i ? "active" : ""}`}
+                  >
+                    <p>{item.a}</p>
                   </div>
-                </div>
+                </article>
               ))}
             </div>
-
           </div>
-
         </div>
       </div>
     </section>

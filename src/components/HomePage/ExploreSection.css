@@ -120,7 +120,7 @@
 
 /* Cards */
 .course-card {
-  background: rgba(255, 255, 255, 0.15); /* semi-transparent */
+  background: rgba(255, 255, 255, 0.075); /* semi-transparent */
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(12px);
 
@@ -139,13 +139,14 @@
 }
 
 .course-card h6 {
-  font-weight: 600;
-  color: #f5f7fb;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.2rem;
 }
 
 .course-card p {
   font-size: 14px;
-  color: #6c757d;
+  color: #c3ced8;
 }
 
 /* Button */
@@ -156,6 +157,13 @@
   border: none;
   padding: 8px 14px;
   border-radius: 8px;
+  transition: all 0.4s ease; /* ✅ smooth animation */
+}
+
+.explore-btn:hover{
+  border-radius: 10rem 8px;
+  border-bottom: #ff9900 5px solid;
+  border-left: #ff9900 3px solid;
 }
 
 /* Image */
