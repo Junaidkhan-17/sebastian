@@ -267,6 +267,49 @@
   box-shadow: 0 0 0 4px rgba(255, 138, 0, 0.16);
 }
 
+@media (max-width: 991.98px) {
+  .mba-hero-section {
+    margin-top: 0;
+    min-height: auto;
+    padding-top: calc(var(--mobile-navbar-offset, 86px) + 24px);
+    padding-bottom: 72px;
+  }
+
+  .mba-hero-title {
+    font-size: 2.25rem;
+  }
+
+  .mba-hero-actions {
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .mba-hero-section {
+    padding-top: calc(var(--mobile-navbar-offset, 86px) + 18px);
+    padding-bottom: 62px;
+  }
+
+  .mba-hero-title {
+    font-size: 1.9rem;
+  }
+
+  .mba-hero-desc {
+    font-size: 0.95rem;
+  }
+
+  .mba-hero-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mba-btn-primary,
+  .mba-btn-ghost {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 
 
 
