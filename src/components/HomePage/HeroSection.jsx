@@ -68,7 +68,7 @@ function HeroSection() {
 
           {/* STATS */}
           <div className="row stats-row">
-            <div className="col-lg-3 col-md-6 mb-3">
+            <div className="col-12 col-sm-6 col-lg-3 mb-3">
               <div className="stat-card">
                 <i className="bi bi-people-fill"></i>
                 <div>
@@ -78,7 +78,7 @@ function HeroSection() {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-6 mb-3">
+            <div className="col-12 col-sm-6 col-lg-3 mb-3">
               <div className="stat-card">
                 <i className="bi bi-award-fill"></i>
                 <div>
@@ -88,7 +88,7 @@ function HeroSection() {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-6 mb-3">
+            <div className="col-12 col-sm-6 col-lg-3 mb-3">
               <div className="stat-card">
                 <i className="bi bi-graph-up-arrow"></i>
                 <div>
@@ -98,7 +98,7 @@ function HeroSection() {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-6 mb-3">
+            <div className="col-12 col-sm-6 col-lg-3 mb-3">
               <div className="stat-card">
                 <i className="bi bi-laptop"></i>
                 <div>
