@@ -1,16 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./ExploreSection.css";
-import explorebg from "../../assets/explorebg.png";
-import explorebg3 from "../../assets/explorebg3.png";
-import explorebg4 from "../../assets/explorebg4.png";
-import explorebg5 from "../../assets/explorebg5.png";
-import nightbg from "../../assets/nightbg.jpg";
 import mbbs from "../../assets/mbbs.jpg";
 import engineering from "../../assets/engineering.png";
 import mba from "../../assets/mba.jpg";
 import coding2 from "../../assets/coding2.jpg";
-import buildingbg2 from "../../assets/buildingbg2.png";
-import herobg from "../../assets/herobg.jpg";
 import homepagesecond from "../../assets/homepagesecond.png";
 
 function ExploreSection() {
@@ -43,7 +36,7 @@ function ExploreSection() {
       ></div>
       <div className="container">
         {/* Top Bar */}
-        <div className="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+        <div className="explore-topbar d-flex justify-content-between align-items-center mb-4 flex-wrap">
           <span className="badge custom-badge">
             <i className="bi bi-mortarboard-fill"></i> Sebastian Institute of
             Education
@@ -96,7 +89,7 @@ function ExploreSection() {
                   desc: "MBBS and medical programs from reputed international universities.",
                 },
               ].map((item, index) => (
-                <div className="col-md-6" key={index}>
+                <div className="col-12 col-sm-6" key={index}>
                   <div className="course-card">
                     <h6>{item.title}</h6>
                     <p>{item.desc}</p>
@@ -110,21 +103,23 @@ function ExploreSection() {
           </div>
 
           {/* RIGHT SIDE IMAGE GRID */}
-          <div className={`hero-right ${isVisualVisible ? "is-visible" : ""}`}>
-            <div className="hex hex-large">
-              <img src={mbbs} alt="Students in classroom" />
-            </div>
+          <div className="col-12 col-lg-5">
+            <div className={`hero-right ${isVisualVisible ? "is-visible" : ""}`}>
+              <div className="hex hex-large">
+                <img src={mbbs} alt="Students in classroom" />
+              </div>
 
-            <div className="hex hex-left">
-              <img src={engineering} alt="Education counseling session" />
-            </div>
+              <div className="hex hex-left">
+                <img src={engineering} alt="Education counseling session" />
+              </div>
 
-            <div className="hex hex-bottom">
-              <img src={mba} alt="Academic success" />
-            </div>
+              <div className="hex hex-bottom">
+                <img src={mba} alt="Academic success" />
+              </div>
 
-            <div className="hex hex-small">
-              <img src={coding2} alt="Medical Studies success" />
+              <div className="hex hex-small">
+                <img src={coding2} alt="Medical Studies success" />
+              </div>
             </div>
           </div>
         </div>

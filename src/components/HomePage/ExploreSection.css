@@ -60,6 +60,12 @@
   font-weight: 600;
 }
 
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 /* Titles */
 .main-title {
   font-size: 3rem;
@@ -118,7 +124,6 @@
   background: white;
   padding: 6px 12px;
   border-radius: 20px;
-  margin-right: 10px;
   font-size: 18px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   color: #002445;
@@ -135,6 +140,7 @@
   border: 1px solid rgba(255, 255, 255, 0.22);
   box-shadow: 0 8px 25px rgba(0,0,0,0.16);
   transition: all 0.3s ease;
+  height: 100%;
 }
 
 .course-card:hover {
@@ -313,6 +319,14 @@
     font-size: 1.05rem;
   }
 
+  .custom-badge {
+    font-size: 1rem;
+  }
+
+  .hashtag {
+    font-size: 0.95rem;
+  }
+
   .hero-right {
     height: 380px;
     width: 100%;
@@ -363,9 +377,20 @@
       );
   }
 
+  .explore-topbar {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 10px;
+    margin-bottom: 18px !important;
+  }
+
   .custom-badge {
     font-size: 0.95rem;
     padding: 6px 12px;
+  }
+
+  .hashtag {
+    font-size: 0.9rem;
   }
 
   .main-title {
@@ -394,6 +419,12 @@
   .course-card p {
     font-size: 0.88rem;
     line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .explore-btn {
+    width: 100%;
+    padding: 10px 12px;
   }
 
   .hero-right {
