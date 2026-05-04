@@ -53,6 +53,13 @@
   font-weight: 500;
   font-size: 1.2rem;
   font-family: 'CabinetGrotesk', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  white-space: normal;
+  line-height: 1.35;
+  word-break: break-word;
 }
 
 .hashtag {
@@ -255,7 +262,7 @@
 /* Positions */
 .hex-large {
   bottom: 13rem;
-  right: 150px;
+  right: 120px;
   width: 260px;
   height: 300px;
   z-index: 2;
@@ -263,7 +270,7 @@
 
 .hex-left {
   top: 120px;
-  left: 38px;
+  left: 48px;
   width: 150px;
   height: 180px;
 }
@@ -278,7 +285,7 @@
 .hex-small {
   bottom: 0rem;
   top: 11.5rem;
-  right: 147px;
+  right: 115px;
   width: 270px;
   height: 300px;
 }
@@ -321,6 +328,7 @@
 
   .custom-badge {
     font-size: 1rem;
+    color: #ffffff;
   }
 
   .hashtag {
@@ -386,7 +394,10 @@
 
   .custom-badge {
     font-size: 0.95rem;
-    padding: 6px 12px;
+    padding: 8px 12px;
+    width: 100%;
+    border-radius: 14px;
+    color: #ffffff;
   }
 
   .hashtag {
@@ -431,16 +442,20 @@
     position: static;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(2, minmax(120px, 1fr));
-    gap: 12px;
-    justify-items: center;
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    justify-items: stretch;
     margin-top: 24px;
   }
 
   .hex {
     position: relative;
-    width: 140px;
-    height: 160px;
+    width: 100%;
+    max-width: 170px;
+    aspect-ratio: 5 / 6;
+    height: auto;
+    margin: 0 auto;
     transform: none;
     opacity: 1;
   }
@@ -453,7 +468,9 @@
     left: auto;
     right: auto;
     bottom: auto;
-    width: 140px;
-    height: 160px;
+    width: 100%;
+    max-width: 170px;
+    aspect-ratio: 5 / 6;
+    height: auto;
   }
 }
