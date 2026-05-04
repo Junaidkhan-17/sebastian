@@ -58,10 +58,10 @@ function MbaFeaturesSection() {
               <h4>Core Preparation Modules</h4>
 
               <ul>
-                <li>Quantitative Aptitude masterclasses with shortcut techniques</li>
-                <li>Verbal Ability and Reading Comprehension strategy sessions</li>
-                <li>Logical Reasoning and Data Interpretation sectional labs</li>
-                <li>Previous year paper solving and percentile improvement plan</li>
+                <li>Complete RTMNU MBA syllabus coverage (All Subjects)</li>
+                <li>Strong focus on Numerical + Theory preparation</li>
+                <li>Free Important Questions provided at joining</li>
+                <li>Exam-oriented teaching methodology</li>
               </ul>
 
             </div>
@@ -74,10 +74,11 @@ function MbaFeaturesSection() {
               <h4>Premium Coaching Add-ons</h4>
 
               <ul>
-                <li>Daily practice sheets and homework review</li>
-                <li>Weekly full-length mocks with mentor debrief</li>
-                <li>OMET-specific sessions for XAT, NMAT, SNAP and CET</li>
-                <li>Profile building, SOP and B-school application guidance</li>
+                <li>Regular numerical practice sets for all subjects</li>
+                <li>Well-structured and easy-to-understand theory notes</li>
+                <li>Live classes available (Online + Offline in Nagpur)</li>
+                <li>Personal 24×7 doubt-solving support</li>
+                <li>Affordable pricing – ₹999 per subject</li>
               </ul>
 
             </div>

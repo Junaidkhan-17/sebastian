@@ -3,22 +3,40 @@
   position: relative;
   overflow: hidden;
   padding: 60px 0;
-  background: #f5f7fb;
+  background: linear-gradient(
+    90deg,
+    rgb(1, 26, 66) 0%,
+    rgba(1, 26, 66, 0.818) 35%,
+    rgba(1, 26, 66, 0.536) 65%,
+    rgba(10, 31, 68, 0) 75%,
+    transparent 100%
+  );
+  
 }
 
 /* Background image layer */
 .explore-bg {
   position: absolute;
   inset: 0;
-  background-image: var(--explore-bg);
+  background-image:
+    linear-gradient(
+      90deg,
+      rgb(1, 26, 66) 0%,
+      rgba(1, 26, 66, 0.818) 35%,
+      rgba(1, 26, 66, 0.536) 65%,
+      rgba(10, 31, 68, 0) 75%,
+      transparent 100%
+    ),
+    var(--explore-bg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+  
   filter: blur(4px);
   transform: scale(1.1); /* prevents blur edges */
-  z-index: 0;
   pointer-events: none;
+
+  z-index: 1;
 }
 
 /* Optional dark overlay (VERY IMPORTANT for readability) */

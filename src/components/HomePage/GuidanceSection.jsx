@@ -43,11 +43,11 @@ function GuidanceSection() {
             </h2>
 
             <p className="section-text">
-              <span className="section-text-span">Sebastian Educational Institute</span> is one of the trusted education consultancy services helping students secure admission in leading colleges across India and abroad.
+              <span className="section-text-span">Sebastian Educational Institute</span>  is a highly dedicated and result-oriented educator based in Nagpur, known for expertise in covering the complete RTMNU MBA syllabus. With years of teaching experience and deep understanding of exam patterns, he focuses on building strong conceptual clarity with a strategic, exam-oriented approach.
             </p>
 
             <p className="section-text">
-              From course and college selection to final confirmation, our team supports every step with clarity, speed, and transparency.
+              Beyond MBA coaching, he provides expert guidance for MBBS abroad — helping students and parents with eligibility, NMC guidelines, university selection, and complete admission processes in Europe.
             </p>
 
             {/* LIST */}
@@ -55,6 +55,7 @@ function GuidanceSection() {
               <li><i className="bi bi-check-circle-fill"></i> Transparent counseling process</li>
               <li><i className="bi bi-check-circle-fill"></i> Experienced admission mentors</li>
               <li><i className="bi bi-check-circle-fill"></i> End-to-end parent support</li>
+              <li><i className="bi bi-check-circle-fill"></i> Expert in Theory Subjects</li>
             </ul>
 
             {/* BUTTONS */}
@@ -75,22 +76,27 @@ function GuidanceSection() {
 
           {[
             {
-              title: "Personalized Counseling",
-              desc: "One-to-one career planning based on goals, marks, and budget.",
+              title: "Expert in Theory Subjects",
+              desc: "Strong conceptual teaching style",
               icon: "bi-person-check-fill"
             },
             {
-              title: "Verified Colleges",
-              desc: "Guidance for top institutions in India and selected global destinations.",
+              title: "Expert in Numerical Subjects",
+              desc: "Simplifies complex problems",
               icon: "bi-patch-check-fill"
             },
             {
-              title: "Admission Support",
-              desc: "Complete help with applications, documentation, and follow-ups.",
+              title: "Exam-Oriented Preparation",
+              desc: "Focus on high-scoring strategies",
+              icon: "bi-patch-check-fill"
+            },
+            {
+              title: "Personal Mentorship",
+              desc: "Helps students master concepts easily",
               icon: "bi-file-earmark-text-fill"
             }
           ].map((item, i) => (
-            <div className="col-lg-4 col-md-6" key={i}>
+            <div className="col-lg-3 col-md-6" key={i}>
               <div className="info-card">
                 <i className={`bi ${item.icon}`}></i>
                 <h6>{item.title}</h6>

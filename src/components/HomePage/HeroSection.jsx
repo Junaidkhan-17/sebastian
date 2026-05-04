@@ -68,17 +68,17 @@ function HeroSection() {
 
           {/* STATS */}
           <div className="row stats-row">
-            <div className="col-lg-4 col-md-6 mb-3">
+            <div className="col-lg-3 col-md-6 mb-3">
               <div className="stat-card">
                 <i className="bi bi-people-fill"></i>
                 <div>
-                  <Counter end={1000} suffix="+" />
+                  <Counter end={5000} suffix="+" />
                   <p>Students Guided</p>
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 mb-3">
+            <div className="col-lg-3 col-md-6 mb-3">
               <div className="stat-card">
                 <i className="bi bi-award-fill"></i>
                 <div>
@@ -88,12 +88,22 @@ function HeroSection() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 mb-3">
+            <div className="col-lg-3 col-md-6 mb-3">
               <div className="stat-card">
                 <i className="bi bi-graph-up-arrow"></i>
                 <div>
                   <Counter end={95} suffix="%" />
                   <p>Admission Success Rate</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-md-6 mb-3">
+              <div className="stat-card">
+                <i className="bi bi-laptop"></i>
+                <div>
+                  <h4>Live Classes</h4>
+                  <p>Online & Offline Mode</p>
                 </div>
               </div>
             </div>

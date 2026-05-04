@@ -277,6 +277,85 @@
   transform: rotate(180deg);
 }
 
+@media (max-width: 991.98px) {
+  .faq-section {
+    padding: 64px 0;
+  }
+
+  .faq-head h2 {
+    font-size: clamp(1.9rem, 5.8vw, 2.3rem);
+    line-height: 1.22;
+  }
+
+  .support-card {
+    padding: 22px;
+  }
+
+  .support-card h3 {
+    font-size: 1.45rem;
+  }
+
+  .faq-panel {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .faq-section {
+    padding: 52px 0;
+  }
+
+  .faq-label {
+    font-size: 0.72rem;
+  }
+
+  .faq-head p {
+    font-size: 0.94rem;
+  }
+
+  .support-card {
+    border-radius: 0 16px;
+    padding: 18px;
+  }
+
+  .support-card h3 {
+    font-size: 1.2rem;
+    line-height: 1.35;
+  }
+
+  .support-actions a {
+    padding: 10px 12px;
+    font-size: 0.92rem;
+  }
+
+  .faq-panel {
+    border-radius: 16px;
+    padding: 10px;
+  }
+
+  .faq-header {
+    padding: 14px;
+    gap: 10px;
+  }
+
+  .faq-header h6 {
+    font-size: 0.98rem;
+    line-height: 1.4;
+  }
+
+  .faq-header i {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    font-size: 0.75rem;
+  }
+
+  .faq-body p {
+    padding: 0 14px 14px;
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+}
 
 
 

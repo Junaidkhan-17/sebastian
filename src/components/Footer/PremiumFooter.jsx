@@ -3,21 +3,32 @@ import "./PremiumFooter.css";
 import newlogo from "./../../assets/newlogo.png";
 import newnamelogo1 from "./../../assets/newnamelogo1.png";
 import webdocklogo from "./../../assets/webdocklogo.png";
+import { PhoneForwardedIcon } from "@animateicons/react/lucide";
+import { MailsIcon } from "@animateicons/react/lucide";
+import { HouseIcon } from "@animateicons/react/lucide";
+import { LayoutGridIcon } from "@animateicons/react/lucide";
+import { FolderOpenIcon } from "@animateicons/react/lucide";
+import { ContactRoundIcon } from "@animateicons/react/lucide";
+import { FacebookIcon } from "@animateicons/react/huge";
+import { NewTwitterIcon } from "@animateicons/react/huge";
 
 function PremiumFooter() {
   return (
     <footer className="pf-footer">
-
       <div className="container">
-
         <div className="row">
-
           {/* BRAND */}
           <div className="col-lg-4 col-md-6 mb-4">
             <img src={newlogo} className="footer-logo" alt="Sebastian logo" />
-            <img src={newnamelogo1} className="footer-logo-name" alt="Sebastian logo" />
+            <img
+              src={newnamelogo1}
+              className="footer-logo-name"
+              alt="Sebastian logo"
+            />
             <p className="pf-desc">
-              Trusted guidance for MBBS admissions in India & abroad. Helping students achieve their dream medical career with expert counseling.
+              Trusted guidance for MBBS admissions in India & abroad. Helping
+              students achieve their dream medical career with expert
+              counseling.
             </p>
           </div>
 
@@ -25,10 +36,30 @@ function PremiumFooter() {
           <div className="col-lg-2 col-md-6 mb-4">
             <h6 className="pf-title">Quick Links</h6>
             <ul className="pf-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Programs</a></li>
-              <li><a href="#">Contact</a></li>
+              <li>
+                <a href="#">
+                  <HouseIcon size={24} duration={0.6} color="#f45b48" />
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <LayoutGridIcon size={24} duration={0.6} color="#f45b48" />
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <FolderOpenIcon size={24} duration={0.6} color="#f45b48" />
+                  Programs
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ContactRoundIcon size={24} duration={0.6} color="#f45b48" />
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -36,10 +67,21 @@ function PremiumFooter() {
           <div className="col-lg-3 col-md-6 mb-4">
             <h6 className="pf-title">Programs</h6>
             <ul className="pf-links">
-              <li><a href="#">MBBS in Abroad</a></li>
-              <li><a href="#">Engineering Admissions</a></li>
-              <li><a href="#">Career Counseling</a></li>
-              <li><a href="#">Scholarships</a></li>
+              <li>
+                <a href="#">MBBS in Abroad </a>
+              </li>
+              <li>
+                <a href="#">MBBS in India</a>
+              </li>
+              <li>
+                <a href="#">Engineering Admissions</a>
+              </li>
+              <li>
+                <a href="#">Career Counseling</a>
+              </li>
+              <li>
+                <a href="#">Scholarships</a>
+              </li>
             </ul>
           </div>
 
@@ -48,35 +90,44 @@ function PremiumFooter() {
             <h6 className="pf-title">Contact</h6>
 
             <p className="pf-contact">
-              <i className="bi bi-telephone-fill"></i> 9172126359
+              <PhoneForwardedIcon size={24} color="#f45b48" /> +91 9511926359
+            </p>
+            <p className="pf-contact">
+              <PhoneForwardedIcon size={24} color="#f45b48" /> +91 9172126359
             </p>
 
             <p className="pf-contact">
-              <i className="bi bi-envelope-fill"></i> Sebastiangoodwith@gmail.com
+              <MailsIcon size={24} color="#f45b48" />{" "}
+              Sebastian.institute.edu@gmail.com
             </p>
 
             {/* SOCIAL */}
             <div className="pf-social">
-              <a href="#"><i className="bi bi-facebook"></i></a>
-              <a href="#"><i className="bi bi-instagram"></i></a>
-              <a href="#"><i className="bi bi-linkedin"></i></a>
-              <a href="#"><i className="bi bi-youtube"></i></a>
+              <a href="#">
+                <FacebookIcon size={44} duration={1} color="#ffffff" />
+              </a>
+              <a href="#">
+                <NewTwitterIcon size={44} duration={1} color="#ffffff" />
+              </a>
+              <a href="#">
+                <i className="bi bi-linkedin"></i>
+              </a>
+              <a href="#">
+                <i className="bi bi-youtube"></i>
+              </a>
             </div>
-
           </div>
 
           <div className="powered-logo">
             <h4>Powered By</h4>
             <img src={webdocklogo} alt="Powered By" />
           </div>
-
         </div>
 
         {/* BOTTOM */}
         <div className="pf-bottom">
           <p>© 2026 Vishwa Medical Admission Point. All rights reserved.</p>
         </div>
-
       </div>
     </footer>
   );

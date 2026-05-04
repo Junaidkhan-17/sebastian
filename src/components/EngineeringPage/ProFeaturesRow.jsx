@@ -52,7 +52,7 @@ function ProFeaturesRow() {
               {/* IMAGE */}
               <div className="profeat-img-wrap">
                   <img src={item.image} alt={item.title} />
-                  <span className="profeat-badge-num">{i + 1}</span>
+
               </div>
 
               {/* CONTENT */}

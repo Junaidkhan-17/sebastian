@@ -3,6 +3,7 @@ import AdmissionDetail from "../components/PgdmPage/AdmissionDetail";
 import FeaturesSection from "../components/PgdmPage/FeaturesSection";
 import FaqSupport from "../components/PgdmPage/FaqSupport";
 import AppDownloadSection from "../components/PgdmPage/AppDownloadSection";
+import MCASyllabus from "../components/PgdmPage/McaSyllabus";
 
 function PgdmPage() {
   return (
@@ -10,6 +11,7 @@ function PgdmPage() {
     <PgdmHero />
     <AdmissionDetail />
     <FeaturesSection />
+    <MCASyllabus />
     <FaqSupport />
     <AppDownloadSection />
     </>

@@ -46,14 +46,13 @@ function MbaHero() {
             </span>
 
             <h1 className="mba-hero-title">
-              Crack <span>CAT</span>,<span> XAT</span>, <span>CMAT</span>, <span>MAT</span> & <span>CET</span> with a smarter
-              preparation system
+              Study <span>CAT</span>,<span> XAT</span>, <span>CMAT</span>, <span>MAT</span> & <span>CET</span> with a smarter
+              Coaching system
             </h1>
 
             <p className="mba-hero-desc">
-              Learn from expert mentors, follow a high-impact prep roadmap, and
-              track your progress every week through structured mocks and
-              personalized analysis.
+              Beyond MBA coaching, he provides expert guidance for MBBS abroad — helping students and parents with eligibility,
+               NMC guidelines, university selection, and complete admission processes in Europe.
             </p>
 
             <div className="mba-hero-actions">
@@ -68,15 +67,19 @@ function MbaHero() {
             <div className="mba-hero-chips">
               <span>
                 <i className="bi bi-check2-circle"></i>
-                Daily Concept Masterclasses
+                Expert in Theory Subjects
               </span>
               <span>
                 <i className="bi bi-check2-circle"></i>
-                Weekly Mock and Analytics
+                Expert in Numerical Subjects
               </span>
               <span>
                 <i className="bi bi-check2-circle"></i>
-                GD-PI-WAT Mentorship
+                Exam-Oriented Preparation
+              </span>
+              <span>
+                <i className="bi bi-check2-circle"></i>
+                Personal Mentorship
               </span>
             </div>
           </div>

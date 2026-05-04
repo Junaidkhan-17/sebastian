@@ -1,0 +1,166 @@
+:root {
+  --primary: #0F172A;
+  --accent: #F97316;
+  --light: #F8FAFC;
+  --muted: #64748B;
+
+  /* glass */
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.4);
+}
+
+/* ================= SECTION ================= */
+.consultation-section {
+  padding: 80px 0;
+  background: linear-gradient(rgba(248,250,252,0.92), rgba(248,250,252,0.92)),
+              url('/src/assets/bg-campus.jpg') center/cover no-repeat;
+}
+
+/* ================= TITLE ================= */
+.consultation-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--primary);
+    font-family: 'CabinetGrotesk', sans-serif;
+}
+
+.consultation-title span {
+  color: rgb(255, 179, 0);
+    font-family: 'CabinetGrotesk', sans-serif;
+}
+
+/* ================= GLASS CARD ================= */
+.consult-card {
+  position: relative;
+  padding: 40px 25px;
+  border-radius: 20px;
+
+  /* GLASSMORPHISM */
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid var(--glass-border);
+
+  box-shadow: 
+    0px 10px 30px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 rgba(255,255,255,0.5);
+
+  text-align: center;
+
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+/* gradient glow layer */
+.consult-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(circle at top, rgba(249,115,22,0.18), transparent 70%);
+  opacity: 0;
+  transition: 0.35s ease;
+}
+
+/* hover */
+.consult-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-bottom: gold 6px solid;
+  border-left: gold 3px solid;
+}
+
+.consult-card:hover::before {
+  opacity: 1;
+}
+
+/* ================= ICON ================= */
+.consult-icon {
+  font-size: 40px;
+  color: #2563EB;
+  margin-bottom: 20px;
+  transition: all 0.4s ease;
+}
+
+.icon {
+      font-size: 40px;
+}
+
+/* ICON ANIMATION */
+.consult-card:hover .consult-icon {
+  transform: scale(1.25) rotate(6deg);
+  color: var(--accent);
+}
+
+/* ================= TEXT ================= */
+.consult-card h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary);
+  margin-bottom: 10px;
+  font-family: 'CabinetGrotesk', sans-serif;
+  font-size: 1.5rem;
+}
+
+.consult-card p {
+  font-size: 18px;
+  color: black;
+  line-height: 1.6;
+  font-family: 'CabinetGrotesk', sans-serif;
+}
+
+/* ================= PACKAGE BOX ================= */
+.package-box {
+  margin-top: 60px;
+  padding: 60px 40px;
+  border-radius: 20px;
+
+  /* GLASS */
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+
+  text-align: center;
+
+  box-shadow: 0px 20px 60px rgba(0,0,0,0.08);
+}
+
+.package-head  {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'CabinetGrotesk', sans-serif;
+}
+
+.package-box span {
+  color: rgb(239, 174, 10);
+}
+
+.package-box p {
+  max-width: 600px;
+  margin: 15px auto 30px;
+  color: black;
+  font-size: 1.2rem;
+  font-family: 'CabinetGrotesk', sans-serif;
+}
+
+/* ================= BUTTON ================= */
+.cta-btn {
+  background: linear-gradient(135deg, #F97316, #FB923C);
+  border: none;
+  padding: 14px 28px;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s ease;
+
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0px 12px 30px rgba(249,115,22,0.4);
+    border-bottom: rgb(242, 176, 8) 6px solid;
+  border-left: rgb(242, 176, 8) 3px solid;
+    border-radius: 20rem 999px ;
+}

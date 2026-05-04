@@ -17,13 +17,18 @@
   z-index: 999;
 
   /* Glass Effect */
-  background: var(--glass-bg);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 10, 32, 0.99) 0%,
+    rgba(0, 10, 32, 0.9) 35%,
+    rgba(0, 10, 32, 0.8) 65%,
+    rgba(0, 10, 32, 0.62) 100%
+  );
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(14px);
 
   /* Shape */
   border-radius: 38px 0px;
-
   /* Border + Shadow */
   border: 1px solid var(--glass-border);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
@@ -35,7 +40,13 @@
 /* Scroll Behavior */
 .custom-navbar.scrolled {
   transform: none;
-  background: rgba(13, 59, 102, 0.184);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 8, 26, 0.99) 0%,
+    rgba(0, 8, 26, 0.92) 35%,
+    rgba(0, 8, 26, 0.84) 65%,
+    rgba(0, 8, 26, 0.7) 100%
+  );
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
 }
 
@@ -134,8 +145,8 @@
 
 /* ================= CONTACT BUTTON ================= */
 .contact-btn {
-  background: #ffffff;
-  color: var(--primary);
+
+  color: white;
   padding: 6px 16px;
   border-radius: 100rem 30px;
   margin-left: 15px;

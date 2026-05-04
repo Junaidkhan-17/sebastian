@@ -127,4 +127,78 @@
 }
 
 /* RESPONSIVE */
+@media (max-width: 991.98px) {
+  .pgdm-app-download-section {
+    padding: 64px 0;
+    background-size: cover;
+    background-position: left top, center right;
+  }
+
+  .pgdm-app-tagline {
+    font-size: 1.15rem;
+  }
+
+  .pgdm-app-title {
+    font-size: clamp(1.9rem, 5.6vw, 2.2rem);
+    line-height: 1.25;
+  }
+
+  .qr-card {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .pgdm-app-download-section {
+    padding: 52px 0;
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.95) 0%,
+        rgba(255, 255, 255, 0.88) 60%,
+        rgba(255, 255, 255, 0.8) 100%
+      ),
+      var(--pgdm-bg-image);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .pgdm-app-tagline {
+    font-size: 0.95rem;
+  }
+
+  .pgdm-app-title {
+    font-size: clamp(1.45rem, 7.2vw, 1.8rem);
+  }
+
+  .pgdm-app-desc {
+    font-size: 0.93rem;
+    line-height: 1.55;
+  }
+
+  .store-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .store-buttons img {
+    width: 34px;
+    margin-right: 0;
+  }
+
+  .create-account {
+    font-size: 1.08rem;
+    line-height: 1.35;
+  }
+
+  .qr-card {
+    margin-top: 16px;
+    padding: 12px;
+    width: 100%;
+  }
+
+  .qr-card img {
+    height: 4.4rem;
+  }
+}
 

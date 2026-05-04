@@ -97,7 +97,8 @@
 .stat-card {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
-  padding: 22px;
+  padding: 5px 1px;
+  min-height: 110px;
   border-radius: 38px 0px;
   text-align: left;
   transition: all 0.35s ease;
@@ -110,26 +111,34 @@
   font-family: 'CabinetGrotesk', sans-serif;
 }
 
+.stat-card > div {
+  flex: 1;
+  min-width: 0;
+}
+
 /* Icon */
 .stat-card i {
-  font-size: 46px;
+  font-size: 36px;
   color: #f4c430;
   min-width: 40px;
 }
 
 /* Text */
 .stat-card h3 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   margin: 0;
+  line-height: 1.1;
   font-family: 'CabinetGrotesk', sans-serif;
 }
 
 .stat-card p {
-  font-size: 20px;
+  font-size: 18px;
   color: #ccc;
   margin: 0;
-    font-family: 'poppins', sans-serif;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  font-family: 'poppins', sans-serif;
 }
 
 /* Hover */
@@ -180,4 +189,3 @@
     margin-bottom: 24px;
   }
 }
-

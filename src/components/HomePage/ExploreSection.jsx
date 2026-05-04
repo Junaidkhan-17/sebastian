@@ -11,6 +11,7 @@ import mba from "../../assets/mba.jpg";
 import coding2 from "../../assets/coding2.jpg";
 import buildingbg2 from "../../assets/buildingbg2.png";
 import herobg from "../../assets/herobg.jpg";
+import homepagesecond from "../../assets/homepagesecond.png";
 
 function ExploreSection() {
   const sectionRef = useRef(null);
@@ -38,7 +39,7 @@ function ExploreSection() {
     <section className="explore-section" ref={sectionRef}>
       <div
         className="explore-bg"
-        style={{ backgroundImage: `url(${explorebg5})` }}
+        style={{ "--explore-bg": `url(${homepagesecond})` }}
       ></div>
       <div className="container">
         {/* Top Bar */}
