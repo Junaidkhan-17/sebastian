@@ -249,6 +249,84 @@
 }
 
 /* ================= RESPONSIVE ================= */
+@media (max-width: 991.98px) {
+  .guidance-section {
+    padding: 66px 0;
+  }
 
+  .image-wrapper {
+    margin-left: 0;
+  }
 
+  .image-wrapper img {
+    margin-top: 0;
+    height: 20rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.9rem, 6vw, 2.3rem);
+  }
+
+  .section-text {
+    font-size: 1rem;
+  }
+
+  .section-text-span {
+    font-size: 1.4rem;
+  }
+
+  .feature-list li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .guidance-section {
+    padding: 52px 0;
+  }
+
+  .section-title {
+    font-size: clamp(1.55rem, 8vw, 1.9rem);
+    line-height: 1.25;
+  }
+
+  .image-wrapper img {
+    height: 14rem;
+  }
+
+  .floating-badge {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px 12px;
+  }
+
+  .feature-list li {
+    font-size: 0.92rem;
+    margin-bottom: 8px;
+  }
+
+  .btn-group-custom {
+    gap: 8px;
+  }
+
+  .btn-primary-custom,
+  .btn-outline-custom {
+    width: 100%;
+    text-align: center;
+  }
+
+  .info-card {
+    padding: 16px;
+    border-radius: 0 14px;
+  }
+
+  .info-card h6 {
+    font-size: 1.1rem;
+  }
+
+  .info-card p {
+    font-size: 0.92rem;
+  }
+}
 

@@ -169,6 +169,24 @@
   .hero-title .underline {
     width: min(100%, 320px);
   }
+
+  .stats-row {
+    margin-top: 28px;
+  }
+
+  .stat-card {
+    min-height: 132px;
+    padding: 16px 14px;
+    border-radius: 20px 0;
+  }
+
+  .stat-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .stat-card p {
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -187,5 +205,24 @@
   .hero-description {
     font-size: 0.95rem;
     margin-bottom: 24px;
+  }
+
+  .stat-card {
+    min-height: 120px;
+    padding: 12px;
+  }
+
+  .stat-card i {
+    font-size: 28px;
+    min-width: 28px;
+  }
+
+  .stat-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .stat-card p {
+    font-size: 0.85rem;
+    line-height: 1.4;
   }
 }

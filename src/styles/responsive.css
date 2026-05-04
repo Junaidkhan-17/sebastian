@@ -205,3 +205,38 @@ canvas {
     margin-right: 0;
   }
 }
+
+@media (max-width: 479.98px) {
+  .container,
+  .container-fluid {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .hero-title,
+  .main-title,
+  .sub-title,
+  .engv2-title,
+  .mba-hero-title,
+  .profeat-title {
+    font-size: clamp(1.4rem, 8.5vw, 1.75rem);
+  }
+
+  .hero-subtitle,
+  .hero-desc,
+  .description,
+  .engv2-desc,
+  .mba-hero-desc,
+  .main-desc,
+  .subtitle {
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+
+  .hero-btn,
+  .engv2-btn,
+  .signup-btn,
+  .cta-btn {
+    width: 100%;
+  }
+}
