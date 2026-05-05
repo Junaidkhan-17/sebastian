@@ -484,12 +484,14 @@
   }
 
   .ring-img {
-    width: 215px;
+    width: 250px;
+    height: 450px;
+    margin-left: -3rem;
   }
 
   .ring-image {
-    width: 225px;
-    height: 225px;
+    width: 10rem;
+    height: 10rem;
     margin-left: 1.8rem;
   }
 }
@@ -509,11 +511,12 @@
 
   .ring-img {
     width: 185px;
+    height: 285px;
   }
 
   .ring-image {
-    width: 195px;
-    height: 195px;
+    width: 105px;
+    height: 105px;
     margin-left: 1.2rem;
   }
 }
@@ -629,5 +632,56 @@
   .ring-image.enter,
   .ring-image.exit {
     animation: none !important;
+  }
+}
+
+/* Keep these at end so they override base ring-image sizing */
+@media (max-width: 992px) {
+  .ring-container {
+    height: 390px;
+    margin-top: 20px;
+  }
+
+  .ring-img {
+    width: 300px;
+  }
+
+  .ring-image {
+    width: 330px;
+    height: 330px;
+    margin-left: 3.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .ring-container {
+    height: 290px;
+    margin-top: 18px;
+  }
+
+  .ring-img {
+    width: 215px;
+  }
+
+  .ring-image {
+    width: 225px;
+    height: 225px;
+    margin-left: 1.8rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .ring-container {
+    height: 250px;
+  }
+
+  .ring-img {
+    width: 185px;
+  }
+
+  .ring-image {
+    width: 195px;
+    height: 195px;
+    margin-left: 1.2rem;
   }
 }
