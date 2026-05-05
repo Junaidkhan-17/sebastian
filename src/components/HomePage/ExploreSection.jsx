@@ -1,15 +1,26 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./ExploreSection.css";
-import mbbs from "../../assets/mbbs.jpg";
-import engineering from "../../assets/engineering.png";
-import mba from "../../assets/mba.jpg";
-import coding2 from "../../assets/coding2.jpg";
+import mbbsringnew from "../../assets/mbbsringnew.png";
+import engineeringringnew from "../../assets/engineeringringnew.png";
+import mbaringnew from "../../assets/mbaringnew.png";
+import codingringnew from "../../assets/codingringnew.png";
+import ringnew from "../../assets/ringnew.png";
 import homepagesecond from "../../assets/homepagesecond.png";
 
 function ExploreSection() {
+
   const sectionRef = useRef(null);
+
+  // ✅ FIRST declare state
   const [isVisualVisible, setIsVisualVisible] = useState(false);
 
+  const images = [mbbsringnew, engineeringringnew, mbaringnew, codingringnew];
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [animateState, setAnimateState] = useState("enter");
+
+  const getCurrentImage = () => images[currentIndex];
+
+  // ✅ THEN useEffect that depends on it
   useEffect(() => {
     const sectionElement = sectionRef.current;
     if (!sectionElement) return;
@@ -27,6 +38,22 @@ function ExploreSection() {
     observer.observe(sectionElement);
     return () => observer.disconnect();
   }, []);
+  
+  // ✅ SECOND useEffect (depends on isVisualVisible)
+  useEffect(() => {
+    if (!isVisualVisible) return;
+
+    const interval = setInterval(() => {
+      setAnimateState("exit");
+
+      setTimeout(() => {
+        setCurrentIndex((prev) => (prev + 1) % images.length);
+        setAnimateState("enter");
+      }, 800);
+    }, 3800);
+
+    return () => clearInterval(interval);
+  }, [isVisualVisible]);
 
   return (
     <section className="explore-section" ref={sectionRef}>
@@ -51,9 +78,12 @@ function ExploreSection() {
             <h5 className="sub-title">Explore all Major fields and Branches</h5>
 
             <p className="description">
-              Helping students build successful careers through <span className="highlight">MBA</span> , <span className="highlight">MCA</span> ,
-              <span className="highlight">Engineering</span> , and <span className="highlight">Medical Programs</span> in top universities in{" "}
-              <span className="highlight">India</span> and{" "}
+              Helping students build successful careers through{" "}
+              <span className="highlight">MBA</span> ,{" "}
+              <span className="highlight">MCA</span> ,
+              <span className="highlight">Engineering</span> , and{" "}
+              <span className="highlight">Medical Programs</span> in top
+              universities in <span className="highlight">India</span> and{" "}
               <span className="highlight">Abroad</span>.
             </p>
 
@@ -104,21 +134,13 @@ function ExploreSection() {
 
           {/* RIGHT SIDE IMAGE GRID */}
           <div className="col-12 col-lg-5">
-            <div className={`hero-right ${isVisualVisible ? "is-visible" : ""}`}>
-              <div className="hex hex-large">
-                <img src={mbbs} alt="Students in classroom" />
-              </div>
+            <div className="ring-container">
+              {/* Ring */}
+              <img src={ringnew} alt="ring" className="ring-img" />
 
-              <div className="hex hex-left">
-                <img src={engineering} alt="Education counseling session" />
-              </div>
-
-              <div className="hex hex-bottom">
-                <img src={mba} alt="Academic success" />
-              </div>
-
-              <div className="hex hex-small">
-                <img src={coding2} alt="Medical Studies success" />
+              {/* Animated Image */}
+              <div className={`ring-image ${animateState}`}>
+                <img src={getCurrentImage()} alt="course" />
               </div>
             </div>
           </div>
@@ -127,5 +149,6 @@ function ExploreSection() {
     </section>
   );
 }
+
 
 export default ExploreSection;

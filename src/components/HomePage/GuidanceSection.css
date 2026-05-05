@@ -139,10 +139,6 @@
   font-size: 1.4rem;
 }
 
-.feature-list li:hover i {
-  transform: scale(1.2) rotate(8deg);
-}
-
 /* ================= BUTTONS ================= */
 .btn-group-custom {
   margin-top: 25px;
@@ -163,13 +159,6 @@
   border-bottom: #00fbff 6px solid;
 }
 
-.btn-primary-custom:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  border-left: #ffaa00 6px solid;
-  border-bottom: #ffaa00 6px solid;
-}
-
 .btn-outline-custom {
   background: linear-gradient(to right, #1e3a8a, #0ea5e9);
   color: white;
@@ -179,14 +168,6 @@
   transition: 0.3s;
   border-left: #00fbff 6px solid;
   border-bottom: #00fbff 6px solid;
-}
-
-.btn-outline-custom:hover {
-
-  color: white;
-  transform: translateY(-3px);
-  border-left: #ffaa00 6px solid;
-  border-bottom: #ffaa00 6px solid;
 }
 
 /* ================= CARDS ================= */
@@ -213,17 +194,6 @@
   opacity: 0;
   transition: 0.3s;
   
-}
-
-.info-card:hover {
-  transform: none;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.407);
-  border-left: #ffaa00 3px solid;
-  border-bottom: #ffaa00 3px solid;
-}
-
-.info-card:hover::before {
-  opacity: 0.05;
 }
 
 .info-card i {
@@ -300,6 +270,18 @@
     right: 10px;
     bottom: 10px;
     padding: 10px 12px;
+    font-size: 0.85rem;
+    gap: 8px;
+  }
+
+  .floating-badge h6 {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  .floating-badge p {
+    margin: 0;
+    font-size: 0.78rem;
   }
 
   .feature-list li {
@@ -328,6 +310,50 @@
 
   .info-card p {
     font-size: 0.92rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .feature-list li:hover i {
+    transform: scale(1.2) rotate(8deg);
+  }
+
+  .btn-primary-custom:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-left: #ffaa00 6px solid;
+    border-bottom: #ffaa00 6px solid;
+  }
+
+  .btn-outline-custom:hover {
+    color: white;
+    transform: translateY(-3px);
+    border-left: #ffaa00 6px solid;
+    border-bottom: #ffaa00 6px solid;
+  }
+
+  .info-card:hover {
+    transform: none;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.407);
+    border-left: #ffaa00 3px solid;
+    border-bottom: #ffaa00 3px solid;
+  }
+
+  .info-card:hover::before {
+    opacity: 0.05;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .btn-primary-custom:active,
+  .btn-outline-custom:active {
+    transform: scale(0.98);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-badge {
+    animation: none !important;
   }
 }
 
