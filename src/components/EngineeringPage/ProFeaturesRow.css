@@ -75,7 +75,8 @@
 
   transition: all 0.35s ease;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+  height: 100%;
 }
 
 /* gradient hover layer */
@@ -88,15 +89,6 @@
   transition: 0.3s;
 }
 
-/* HOVER */
-.profeat-card:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
-}
-
-.profeat-card:hover::before {
-  opacity: 0.06;
-}
 
 /* GRID LAYOUT */
 .profeat-grid {
@@ -253,12 +245,11 @@
 
 /* 🔥 HORIZONTAL ROW */
 .profeat-row {
-  display: flex;
-  gap: 14px;
-  overflow-x: auto;
-  padding-bottom: 10px;
-  scroll-behavior: smooth;
-  scroll-snap-type: x proximity;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  overflow: visible;
+  padding-bottom: 0;
 }
 
 .profeat-row::-webkit-scrollbar {
@@ -267,13 +258,13 @@
 
 /* 🔥 CARD IMAGE STYLE */
 .profeat-card-img {
-  flex: 0 0 clamp(260px, 32vw, 340px);
+  width: 100%;
   display: block;
   padding: 0;
   background: rgba(255,255,255,0.9);
   border-radius: 32px 18px;
   overflow: hidden;
-  scroll-snap-align: start;
+  min-height: 100%;
 }
 
 /* 🔥 IMAGE */
@@ -288,10 +279,6 @@
   height: 100%;
   object-fit: cover;
   transition: 0.4s;
-}
-
-.profeat-card-img:hover img {
-  transform: scale(1.08);
 }
 
 /* 🔥 NUMBER BADGE */
@@ -341,11 +328,12 @@
   }
 
   .profeat-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
   }
 
   .profeat-card-img {
-    flex: 0 0 min(76vw, 320px);
+    width: 100%;
   }
 }
 
@@ -364,12 +352,13 @@
   }
 
   .profeat-row {
+    grid-template-columns: 1fr;
     gap: 10px;
-    padding-bottom: 8px;
+    padding-bottom: 0;
   }
 
   .profeat-card-img {
-    flex: 0 0 min(86vw, 300px);
+    width: 100%;
     border-radius: 22px 14px;
   }
 
@@ -387,5 +376,54 @@
 
   .profeat-body p {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .profeat-section {
+    padding: 48px 0;
+  }
+
+  .profeat-img-wrap {
+    height: 170px;
+  }
+
+  .profeat-body {
+    padding: 12px 10px;
+  }
+
+  .profeat-body h5 {
+    font-size: 0.98rem;
+  }
+
+  .profeat-body p {
+    font-size: 0.85rem;
+    line-height: 1.45;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .profeat-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  }
+
+  .profeat-card:hover::before {
+    opacity: 0.06;
+  }
+
+  .profeat-card-img:hover img {
+    transform: scale(1.08);
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .profeat-card,
+  .profeat-img-wrap img {
+    transition-duration: 0.2s;
+  }
+
+  .profeat-card:active {
+    transform: scale(0.99);
   }
 }
