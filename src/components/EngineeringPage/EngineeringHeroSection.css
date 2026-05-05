@@ -116,8 +116,8 @@
 }
 
 .engv2-store-btns img:hover {
-  transform: scale(1.08);
-  transition: 3s ease;
+  transform: scale(1.7);
+  transition: 2s ease;
 }
 
 /* TRUST */

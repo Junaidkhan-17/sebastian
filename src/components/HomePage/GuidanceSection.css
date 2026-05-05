@@ -193,7 +193,7 @@
 .info-card {
   background: rgba(255, 255, 255, 0.155);
   backdrop-filter: blur(12px);
-  padding: 25px ;
+  padding: 13px ;
   border-radius: 0px 18px ;
   text-align: left;
   transition: 0.35s ease;
@@ -202,6 +202,7 @@
   overflow: hidden;
   border-left: #ffaa00 3px solid;
   border-bottom: #ffaa00 3px solid;
+  margin-top: -50px;
 }
 
 .info-card::before {
@@ -215,10 +216,10 @@
 }
 
 .info-card:hover {
-  transform: translateY(-5px);
+  transform: none;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.407);
-  border-left: #ffaa00 2px solid;
-  border-bottom: #ffaa00 9px solid;
+  border-left: #ffaa00 3px solid;
+  border-bottom: #ffaa00 3px solid;
 }
 
 .info-card:hover::before {
@@ -226,7 +227,7 @@
 }
 
 .info-card i {
-  font-size: 38px;
+  font-size: 28px;
   color: #0d3b66;
   margin-bottom: 10px;
   position: relative;

@@ -22,7 +22,7 @@ function EngAppDownload() {
                 Download Brochure and Track Admissions On The Go
               </h2>
 
-              <p className="engapp-text">s
+              <p className="engapp-text">
                 Access engineering course details, fee structure, and admission
                 timelines from your phone.
               </p>

@@ -97,7 +97,7 @@ function GuidanceSection() {
             }
           ].map((item, i) => (
             <div className="col-lg-3 col-md-6" key={i}>
-              <div className="info-card">
+              <div className="info-card p-4 pt-2">
                 <i className={`bi ${item.icon}`}></i>
                 <h6>{item.title}</h6>
                 <p>{item.desc}</p>
