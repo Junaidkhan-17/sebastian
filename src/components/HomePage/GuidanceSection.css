@@ -183,7 +183,8 @@
   overflow: hidden;
   border-left: #ffaa00 3px solid;
   border-bottom: #ffaa00 3px solid;
-  margin-top: -50px;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .info-card::before {

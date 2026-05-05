@@ -28,7 +28,7 @@
   -webkit-backdrop-filter: blur(14px);
 
   /* Shape */
-  border-radius: 38px 0px;
+  border-radius:  0px;
   /* Border + Shadow */
   border: 1px solid var(--glass-border);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
@@ -183,7 +183,7 @@
 /* ================= MOBILE DESIGN ================= */
 @media (max-width: 991.98px) {
   .custom-navbar {
-    border-radius: 0 0 20px 20px;
+    border-radius: 0px 0px;
     padding: 8px 0;
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
@@ -266,7 +266,7 @@
 
   .custom-navbar {
     padding: 7px 0;
-    border-radius: 0 0 16px 16px;
+    border-radius: 0px;
   }
 
   .logo-image {

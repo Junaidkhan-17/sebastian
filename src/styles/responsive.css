@@ -195,6 +195,42 @@ canvas {
     grid-template-columns: 1fr;
   }
 
+  /* Prevent section overlap caused by desktop negative offsets */
+  .hero-section,
+  .mba-hero,
+  .pgdm-hero,
+  .engv2-hero,
+  .mbbs-abroad-section,
+  .mbbs-advantages,
+  .mbbs-factors,
+  .mbbs-procedure,
+  .mbbs-scholarships,
+  .mbbs-destination,
+  .mbbs-conclusion,
+  .career-counselling,
+  .university-selection {
+    margin-top: 0 !important;
+  }
+
+  /* Add safe spacing between stacked cards/points */
+  .row > [class*="col-"] {
+    margin-bottom: 12px;
+  }
+
+  .row > [class*="col-"]:last-child {
+    margin-bottom: 0;
+  }
+
+  .info-card,
+  .course-card,
+  .engf-card,
+  .profeat-card,
+  .profeat-card-img,
+  .feature-card,
+  .feature-card-premium {
+    margin-bottom: 10px;
+  }
+
   .pf-social {
     display: flex;
     flex-wrap: wrap;
