@@ -50,7 +50,7 @@ function HeroSection() {
         {/* LEFT CONTENT */}
         <div className="hero-left">
           <h1 className="hero-title">
-            WELCOME TO SEBASTIAN INSTITUTE OF EDUCATION
+            Welcome To Sebastian Institute Of Education
             <span className="underline"></span>
           </h1>
 
