@@ -32,7 +32,7 @@
   align-items: center;
   gap: 10px;
   flex-wrap: nowrap;
-  margin-left:-40px;
+  margin-left:-80px;
 }
 
 .footer-logo {
@@ -52,7 +52,8 @@
   line-height: 1.7;
   margin-top: 10px;
   color: #94a3b8;
-    margin-left: -40px;
+    margin-left: -70px;
+    margin-right: 70px;
     font-family: 'CabinetGrotesk', sans-serif;
 }
 
