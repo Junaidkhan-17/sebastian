@@ -126,7 +126,7 @@ function PremiumFooter() {
 
         {/* BOTTOM */}
         <div className="pf-bottom">
-          <p>© 2026 Vishwa Medical Admission Point. All rights reserved.</p>
+          <p>© Sebastian Sir Consultancy & Coaching Classes. All rights reserved.</p>
         </div>
       </div>
     </footer>

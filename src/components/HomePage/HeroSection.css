@@ -18,14 +18,14 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 84% 20%, rgba(244, 196, 48, 0.18), transparent 36%),
+    radial-gradient(circle at 80% 18%, rgba(244, 196, 48, 0.15), transparent 34%),
     linear-gradient(
-      105deg,
-      rgba(3, 12, 21, 0.94) 0%,
-      rgba(3, 14, 24, 0.88) 38%,
-      rgba(3, 14, 24, 0.58) 62%,
-      rgba(3, 14, 24, 0.22) 80%,
-      rgba(3, 14, 24, 0.08) 100%
+      102deg,
+      rgba(1, 26, 66, 0.95) 0%,
+      rgba(1, 26, 66, 0.88) 34%,
+      rgba(1, 26, 66, 0.62) 62%,
+      rgba(1, 26, 66, 0.3) 82%,
+      rgba(1, 26, 66, 0.16) 100%
     );
 
   z-index: 1;
