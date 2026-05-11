@@ -41,25 +41,18 @@
 .mba-hero-container {
   position: relative;
   z-index: 2;
-        margin-left: -28px;
+  margin-left: -28px;
 }
 
-.mba-hero-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 7px 14px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  background: rgba(255, 255, 255, 0.12);
-  color: #eaf4ff;
-  font-family: "CabinetGrotesk", sans-serif;
-  font-size: 0.92rem;
-  letter-spacing: 0.03em;
+.span-one {
+  font-size: 2.5rem;
+  white-space: nowrap;
+  display: inline-block;
 }
 
-.mba-hero-pill i {
-  color: #ffb347;
+.and {
+  font-size: 2.2rem;
+  color: white;
 }
 
 .mba-hero-title {
@@ -72,8 +65,14 @@
   max-width: 760px;
 }
 
+.title-two {
+  font-size: 2.5rem;
+  margin-bottom: -60px;
+}
+
 .mba-hero-title span {
   color: gold;
+  font-size: 5rem;
 }
 
 .mba-hero-desc {
@@ -317,9 +316,9 @@
 
 .app {
   margin-top: 5px;
-  width: 42px;
+  width: 72px;
   height: auto;
-  margin-right: 0;
+  margin-right: 26px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -331,7 +330,23 @@
 .app-head {
     margin-top: 5px;
   color: white;
-  font-size: 2rem;
+  font-size: 1.2rem;
+}
+
+.mba-hero-chips a + a {
+  margin-left: 22px;
+}
+
+.app-two {
+  margin-top: 5px;
+  width: 72px;
+  height: auto;
+  margin-right: 0;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.app-two:hover {
+    transform: scale(1.08);
 }
 
 

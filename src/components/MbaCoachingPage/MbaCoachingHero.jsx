@@ -44,13 +44,10 @@ function MbaHero() {
       <div className="container mba-hero-container">
         <div className="row align-items-center g-4">
           <div className="col-lg-7">
-            <span className="mba-hero-pill">
-              <i className="bi bi-stars"></i>
-              Sebastian Sir | MBA Coaching Classes
-            </span>
-
             <h1 className="mba-hero-title">
-              Study <span>MBA</span> with a smarter Coaching system
+            <span>Sebastian Sir </span><br/>
+             <h6 className="title-two">MBA COACHING CLASSES.</h6><br/>
+            <span><h6 className="span-one">Learn</h6> , <h6 className="span-one">Practice</h6><h className="and"> &</h> <h6 className="span-one">Execute</h6></span>
             </h1>
 
             <p className="mba-hero-desc">
@@ -58,16 +55,7 @@ function MbaHero() {
               helping students and parents with eligibility, NMC guidelines,
               university selection, and complete admission processes in Europe.
             </p>
-
-            <div className="mba-hero-actions">
-              <button type="button" className="mba-btn-primary">
-                Explore Programs
-              </button>
-              <button type="button" className="mba-btn-ghost">
-                Book Free Counseling
-              </button>
-            </div>
-            <h4 className="app-head"> Visit to our Classes</h4>
+            <h4 className="app-head"> Study Anytime, Anywhere With Our Smart Learning App </h4>
             <a
                 href="https://play.google.com/store/apps/details?id=co.diy7.zfkpc"
                 target="_blank"
@@ -81,7 +69,7 @@ function MbaHero() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img className="app" src={appstore} alt="Download on App Store" />
+                <img className="app-two" src={appstore} alt="Download on App Store" />
               </a>
 
             <div className="mba-hero-chips">

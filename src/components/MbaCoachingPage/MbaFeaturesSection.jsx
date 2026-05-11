@@ -78,7 +78,6 @@ function MbaFeaturesSection() {
                 <li>Well-structured and easy-to-understand theory notes</li>
                 <li>Live classes available (Online + Offline in Nagpur)</li>
                 <li>Personal 24×7 doubt-solving support</li>
-                <li>Affordable pricing – ₹999 per subject</li>
               </ul>
 
             </div>
