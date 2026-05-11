@@ -147,13 +147,13 @@
 .contact-btn {
 
   color: white;
-  padding: 6px 16px;
+  padding: 8px 6px;
   border-radius: 10px 10px;
-  margin-left: 15px;
+  margin-left: 2px;
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 2px;
   font-weight: 500;
 }
 

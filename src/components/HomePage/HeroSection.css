@@ -119,8 +119,8 @@
 .stat-card {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
-  padding: 5px 1px;
-  min-height: 110px;
+  padding: 14px 12px;
+  min-height: 0;
   border-radius: 38px 0px;
   text-align: left;
   transition: all 0.35s ease;
@@ -128,22 +128,27 @@
   border-left: #f4c430 6px solid;
   border-bottom: #f4c430 6px solid;
   display: flex;
-  align-items: center;
-  gap: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 6px;
   font-family: 'CabinetGrotesk', sans-serif;
-  width: 100%;
+  width: max-content;
+  max-width: 100%;
 }
 
 .stat-card > div {
-  flex: 1;
+  flex: 0 1 auto;
   min-width: 0;
+  display: block;
 }
 
 /* Icon */
 .stat-card i {
-  font-size: 36px;
+  font-size: 40px;
   color: #f4c430;
   min-width: 40px;
+  align-self: flex-start;
 }
 
 /* Text */
@@ -153,15 +158,22 @@
   margin: 0;
   line-height: 1.1;
   font-family: 'CabinetGrotesk', sans-serif;
+  white-space: nowrap;
 }
 
 .stat-card p {
   font-size: 18px;
   color: #ccc;
-  margin: 0;
+  margin: 4px 0 0;
   line-height: 1.35;
   overflow-wrap: anywhere;
+  white-space: normal;
   font-family: 'poppins', sans-serif;
+}
+
+.stat-card h4 {
+  margin: 0;
+  white-space: nowrap;
 }
 
 /* Hover */
@@ -212,10 +224,10 @@
   }
 
   .stat-card {
-    min-height: 122px;
-    padding: 16px 14px;
+    min-height: 0;
+    padding: 14px 12px;
     border-radius: 20px 0;
-    gap: 12px;
+    gap: 6px;
   }
 
   .stat-card h3 {
@@ -261,9 +273,9 @@
     min-height: 0;
     padding: 14px 12px;
     border-radius: 16px 0;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
   }
 
   .stat-card i {
