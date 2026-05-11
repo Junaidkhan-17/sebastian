@@ -18,7 +18,7 @@ function PremiumFooter() {
       <div className="container">
         <div className="row">
           {/* BRAND */}
-          <div className="col-lg-4 col-md-6 mb-4">
+          <div className="col-lg-4 col-md-6 mb-4 pf-brand-col">
             <div className="footer-brand">
               <img src={newlogo} className="footer-logo" alt="Sebastian logo" />
               <img

@@ -32,6 +32,7 @@
   align-items: center;
   gap: 10px;
   flex-wrap: nowrap;
+  margin-left:-40px;
 }
 
 .footer-logo {
@@ -51,6 +52,7 @@
   line-height: 1.7;
   margin-top: 10px;
   color: #94a3b8;
+    margin-left: -40px;
     font-family: 'CabinetGrotesk', sans-serif;
 }
 
@@ -226,9 +228,20 @@
 }
 
 @media (max-width: 575.98px) {
+  .pf-footer .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .pf-brand-col {
+    padding-left: 0;
+    padding-right: 8px;
+  }
+
   .footer-brand {
-    justify-content: center;
+    justify-content: flex-start;
     gap: 6px;
+    margin-left: -8px;
   }
 
   .footer-logo {
@@ -245,7 +258,7 @@
   }
 
   .pf-desc {
-    text-align: center;
+    text-align: left;
   }
 
   .pf-title {
