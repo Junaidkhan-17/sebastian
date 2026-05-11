@@ -53,7 +53,7 @@ function HeroSection() {
             Welcome To Sebastian <br/>Institute Of Education
             <span className="underline"></span>
           </h1>
-          <h2 className="hero-title-sec">Study Smart. Dream Big.</h2>
+          <h2 className="hero-title-sec">Learn. Level Up. Lead.</h2>
 
           <p className="hero-subtitle">
             A Trusted Coaching, Career Guidance and Admission Consultancy for
