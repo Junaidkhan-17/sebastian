@@ -19,12 +19,14 @@ function PremiumFooter() {
         <div className="row">
           {/* BRAND */}
           <div className="col-lg-4 col-md-6 mb-4">
-            <img src={newlogo} className="footer-logo" alt="Sebastian logo" />
-            <img
-              src={newnamelogo1}
-              className="footer-logo-name"
-              alt="Sebastian logo"
-            />
+            <div className="footer-brand">
+              <img src={newlogo} className="footer-logo" alt="Sebastian logo" />
+              <img
+                src={newnamelogo1}
+                className="footer-logo-name"
+                alt="Sebastian logo"
+              />
+            </div>
             <p className="pf-desc">
               Trusted guidance for MBBS admissions in India & abroad. Helping
               students achieve their dream medical career with expert
