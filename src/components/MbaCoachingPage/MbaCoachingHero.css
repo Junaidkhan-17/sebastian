@@ -41,6 +41,7 @@
 .mba-hero-container {
   position: relative;
   z-index: 2;
+        margin-left: -28px;
 }
 
 .mba-hero-pill {

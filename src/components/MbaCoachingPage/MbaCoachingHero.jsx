@@ -46,7 +46,7 @@ function MbaHero() {
           <div className="col-lg-7">
             <span className="mba-hero-pill">
               <i className="bi bi-stars"></i>
-              Top MBA Entrance Coaching
+              Sebastian Sir | MBA Coaching Classes
             </span>
 
             <h1 className="mba-hero-title">
