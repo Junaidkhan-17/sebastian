@@ -53,16 +53,17 @@ function HeroSection() {
             Welcome To Sebastian <br/>Institute Of Education
             <span className="underline"></span>
           </h1>
+          <h2 className="hero-title-sec">Study Smart. Dream Big.</h2>
 
           <p className="hero-subtitle">
             A Trusted Coaching, Career Guidance and Admission Consultancy for
-            Engineering, Commerce (MBA, PGDM & MCA) and Medical Programs (MBBS,
+            Engineering, Commerce (MBA, PGDM & MCA) and Medical Programs <br/> (MBBS,
             BAMS).
           </p>
 
           <p className="hero-description">
             Sebastian Educational Institute helps students achieve their dream
-            of studying in top colleges across India and abroad with complete
+            of studying in <br/>top colleges across India and abroad with complete
             admission guidance.
           </p>
 

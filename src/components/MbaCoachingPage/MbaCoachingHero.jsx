@@ -46,7 +46,7 @@ function MbaHero() {
             </span>
 
             <h1 className="mba-hero-title">
-              Study <span>CAT</span>,<span> XAT</span>, <span>CMAT</span>, <span>MAT</span> & <span>CET</span> with a smarter
+              Study <span>CET</span> with a smarter
               Coaching system
             </h1>
 
