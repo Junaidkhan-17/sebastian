@@ -54,6 +54,18 @@ function Destination() {
           </div>
         
       </div>
+
+          <div className="flag-track-two">
+            {marqueeCountries.map((item, i) => (
+              <div className="flag-item-two" key={`${item.name}-${i}`}>
+                <div className="circle-img-two">
+                  <img src={item.img} alt={item.name} loading="lazy" />
+                </div>
+                <h6 className="flag-name-two">{item.name}</h6>
+              </div>
+            ))}
+          </div>
+        
     </section>
   );
 }

@@ -64,17 +64,17 @@ function ExploreSection() {
       <div className="container">
         {/* Top Bar */}
         <div className="explore-topbar d-flex justify-content-between align-items-center mb-4 flex-wrap">
-          <span className="badge custom-badge">
+          <span className="badge-badge">
             <i className="bi bi-mortarboard-fill"></i> Sebastian Institute of
             Education
           </span>
-          <span className="hashtag">#GlobalEducation</span>
+          <span className="hashtag">#PAN India</span>
         </div>
 
         <div className="row align-items-center">
           {/* LEFT */}
           <div className="col-lg-7">
-            <h2 className="main-title">Explore your Future</h2>
+            <h2 className="main-title">Explore Your Future</h2>
             <h5 className="sub-title">Explore all Major fields and Branches</h5>
 
             <p className="description">

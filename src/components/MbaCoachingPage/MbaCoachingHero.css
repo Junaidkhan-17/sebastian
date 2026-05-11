@@ -146,29 +146,33 @@
 
 .mba-hero-chips {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-    margin-top: 1rem;
+  flex-wrap: nowrap;
+  gap: 6px;
+  margin-top: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  overflow-x: visible;
 }
 
 .mba-hero-chips span {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   border-radius: 0px 999px;
-  padding: 8px 14px;
+  padding: 6px 10px;
   background: rgba(255, 255, 255, 0.11);
   border: 1px solid rgba(255, 255, 255, 0.24);
   color: #eaf4ff;
-  font-size: 0.9rem;
-    border-top: #ff8a00 solid 2px;
+  font-size: 0.78rem;
+  border-top: #ff8a00 solid 2px;
   border-right: #ff8a00 solid 2px;
+  white-space: nowrap;
 
 }
 
 .mba-hero-chips i {
   color: #7ce4ff;
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   border-left: #ff8a00 solid 2px;
   border-bottom: #ff8a00 solid 2px;
 }
@@ -310,6 +314,23 @@
   }
 }
 
+.app {
+  margin-top: 5px;
+  width: 42px;
+  height: auto;
+  margin-right: 0;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
 
+.app:hover {
+  transform: scale(1.08);
+}
+
+.app-head {
+    margin-top: 5px;
+  color: white;
+  font-size: 2rem;
+}
 
 

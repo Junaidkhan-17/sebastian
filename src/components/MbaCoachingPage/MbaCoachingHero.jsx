@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./MbaCoachingHero.css";
 import mbacoachinghero from "../../assets/mbacoachinghero.png";
+import googleplay from "../../assets/googleplay.png";
+import appstore from "../../assets/appstore.png";
 
 function useCountUp(target, duration = 1400) {
   const [count, setCount] = useState(0);
@@ -28,14 +30,16 @@ function MbaHero() {
   const mentorCount = useCountUp(1);
 
   return (
-    <section className="mba-hero-section"
-    style={{
-            backgroundImage: `url(${mbacoachinghero})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center 70%",
-          }}>
-           <div className="mba-overlay"></div>
+    <section
+      className="mba-hero-section"
+      style={{
+        backgroundImage: `url(${mbacoachinghero})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center 70%",
+      }}
+    >
+      <div className="mba-overlay"></div>
 
       <div className="container mba-hero-container">
         <div className="row align-items-center g-4">
@@ -46,13 +50,13 @@ function MbaHero() {
             </span>
 
             <h1 className="mba-hero-title">
-              Study <span>CET</span> with a smarter
-              Coaching system
+              Study <span>MBA</span> with a smarter Coaching system
             </h1>
 
             <p className="mba-hero-desc">
-              Beyond MBA coaching, he provides expert guidance for MBBS abroad — helping students and parents with eligibility,
-               NMC guidelines, university selection, and complete admission processes in Europe.
+              Beyond MBA coaching, he provides expert guidance for MBBS abroad —
+              helping students and parents with eligibility, NMC guidelines,
+              university selection, and complete admission processes in Europe.
             </p>
 
             <div className="mba-hero-actions">
@@ -63,6 +67,22 @@ function MbaHero() {
                 Book Free Counseling
               </button>
             </div>
+            <h4 className="app-head"> Visit to our Classes</h4>
+            <a
+                href="https://play.google.com/store/apps/details?id=co.diy7.zfkpc"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img className="app" src={googleplay} alt="Download on Google Play" />
+              </a>
+              {/* App Store */}
+              <a
+                href="https://apps.apple.com/in/app/classplus/id1324522260"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img className="app" src={appstore} alt="Download on App Store" />
+              </a>
 
             <div className="mba-hero-chips">
               <span>
@@ -81,7 +101,9 @@ function MbaHero() {
                 <i className="bi bi-check2-circle"></i>
                 Personal Mentorship
               </span>
+              
             </div>
+            
           </div>
 
           <div className="col-lg-5">

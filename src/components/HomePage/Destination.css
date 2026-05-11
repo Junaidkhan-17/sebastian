@@ -79,8 +79,8 @@
 
 /* IMAGE */
 .circle-img {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   margin: auto;
   border-radius: 50%;
   overflow: hidden;
@@ -125,3 +125,200 @@
 }
 
 
+/*left to right */ 
+
+/* SECTION */
+.dest-section-two {
+  padding: 80px 0;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(30, 58, 138, 0.12), transparent 45%),
+    radial-gradient(circle at 88% 10%, rgba(14, 165, 233, 0.18), transparent 42%),
+    linear-gradient(to bottom, #f3f7ff, #eef3ff);
+  overflow: hidden;
+  margin-top: -50px;
+}
+
+/* TITLE */
+.dest-title-two {
+  font-size: 34px;
+  font-weight: 700;
+  color: #0d3b66;
+}
+
+.dest-sub-two {
+  color: #6c757d;
+}
+
+/* DIVIDER */
+.divider-two {
+  width: 120px;
+  height: 4px;
+  margin: 15px auto;
+  border-radius: 20px;
+  background: linear-gradient(to right, #1e3a8a, #0ea5e9);
+}
+
+/* TRACK */
+.flag-track-wrap-two {
+  position: relative;
+  overflow: hidden;
+  padding: 22px 0 8px;
+}
+
+.flag-track-wrap-two::before,
+.flag-track-wrap-two::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 90px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.flag-track-wrap-two::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    #f3f7ff 0%,
+    rgba(243, 247, 255, 0) 100%
+  );
+}
+
+.flag-track-wrap-two::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    #eef3ff 0%,
+    rgba(238, 243, 255, 0) 100%
+  );
+}
+
+/* MOVING TRACK */
+.flag-track-two {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  width: max-content;
+  will-change: transform;
+  animation: destinationScroll-two 55s linear infinite;
+}
+
+/* CARD */
+.flag-item-two {
+  width: 200px;
+  flex: 0 0 auto;
+  text-align: center;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.flag-item-two:hover {
+  transform: translateY(-6px);
+}
+
+/* IMAGE */
+.circle-img-two {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 3px solid white;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  box-shadow: 0 10px 24px rgba(13, 59, 102, 0.14);
+}
+
+.flag-item-two:hover .circle-img-two {
+  transform: scale(1.04);
+  box-shadow: 0 16px 30px rgba(13, 59, 102, 0.22);
+}
+
+/* TEXT */
+.flag-name-two {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0d3b66;
+  font-family: "CabinetGrotesk", sans-serif;
+  margin: 0;
+}
+
+/* IMAGE ZOOM */
+.circle-img-two img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.flag-item-two:hover .circle-img-two img {
+  transform: scale(1.2);
+}
+
+/* Left TO right ANIMATION */
+@keyframes destinationScroll-two {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .dest-section-two {
+    padding: 60px 0;
+  }
+
+  .dest-title-two {
+    font-size: 28px;
+  }
+
+  .flag-item-two {
+    width: 160px;
+  }
+
+  .circle-img-two {
+    width: 140px;
+    height: 140px;
+  }
+
+  .flag-name-two {
+    font-size: 1rem;
+  }
+
+  .flag-track-two {
+    gap: 18px;
+    animation-duration: 35s;
+  }
+}
+
+@media (max-width: 480px) {
+  .dest-title-two {
+    font-size: 24px;
+  }
+
+  .dest-sub-two {
+    font-size: 14px;
+  }
+
+  .flag-item-two {
+    width: 130px;
+  }
+
+  .circle-img-two {
+    width: 115px;
+    height: 115px;
+  }
+
+  .flag-name-two {
+    font-size: 0.9rem;
+  }
+
+  .flag-track-two {
+    gap: 14px;
+    animation-duration: 28s;
+  }
+}

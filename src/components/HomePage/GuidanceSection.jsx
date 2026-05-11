@@ -26,7 +26,7 @@ function GuidanceSection() {
               <div className="floating-badge">
                 <i className="bi bi-mortarboard-fill"></i>
                 <div>
-                  <h6>1000+ Students</h6>
+                  <h6>5000+ Students</h6>
                   <p>Placed in dream colleges</p>
                 </div>
               </div>
@@ -59,14 +59,15 @@ function GuidanceSection() {
             </ul>
 
             {/* BUTTONS */}
-            <div className="btn-group-custom">
+            {/*<div className="btn-group-custom">
               <button className="btn-primary-custom">
                 Explore Services <i className="bi bi-arrow-right"></i>
               </button>
               <button className="btn-outline-custom">
                 Talk to Counselor <i className="bi bi-arrow-right"></i>
               </button>
-            </div>
+            </div> 
+            */}
 
           </div>
         </div>

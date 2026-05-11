@@ -4,6 +4,7 @@
   overflow: hidden;
   padding: 60px 0;
   background: #041a38;
+
 }
 
 /* Background image layer */
@@ -42,11 +43,12 @@
 .explore-section .container {
   position: relative;
   z-index: 2;
+      margin-left: -28px;
 }
 
 /* Badge */
-.custom-badge {
-  background: rgba(13,59,102,0.16);
+.badge-badge{
+  background: rgba(8, 136, 255, 0.16);
   color: #ffffff;
   padding: 8px 14px;
   border-radius: 20px;
@@ -60,6 +62,11 @@
   white-space: normal;
   line-height: 1.35;
   word-break: break-word;
+  background: linear-gradient(90deg, #ff9900, #ff9900, #ffffff, #ff9900);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 3s linear infinite;
 }
 
 .hashtag {
@@ -77,7 +84,7 @@
 .main-title {
   font-size: 3rem;
   font-weight: 700;
-  font-family: 'CabinetGrotesk', sans-serif;
+  font-family: inherit !important;
 
   background: linear-gradient(90deg, #ff9900, #ff9900, #ffffff, #ff9900);
   background-size: 200% auto;
@@ -97,7 +104,7 @@
 .sub-title {
   color: #ffffff;
   margin-bottom: 10px;
-  font-family: 'CabinetGrotesk', sans-serif;
+  font-family: inherit !important;
   font-weight: 700;
   font-size: 2.3rem;
 }
@@ -310,7 +317,7 @@
     font-size: 1.05rem;
   }
 
-  .custom-badge {
+  .badge-badge {
     font-size: 1rem;
     color: #ffffff;
   }
@@ -391,7 +398,7 @@
     margin-bottom: 18px !important;
   }
 
-  .custom-badge {
+  .badge-badge {
     font-size: 0.95rem;
     padding: 8px 12px;
     width: 100%;
