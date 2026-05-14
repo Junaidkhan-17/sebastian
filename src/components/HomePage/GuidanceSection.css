@@ -228,6 +228,7 @@
 
   .image-wrapper {
     margin-left: 0;
+    margin-bottom: -38px;
   }
 
   .image-wrapper img {
@@ -236,7 +237,7 @@
   }
 
   .section-title {
-    font-size: clamp(1.9rem, 6vw, 2.3rem);
+    font-size: 2rem;
   }
 
   .section-text {
@@ -258,7 +259,7 @@
   }
 
   .section-title {
-    font-size: clamp(1.55rem, 8vw, 1.9rem);
+    font-size: 1.2rem;
     line-height: 1.25;
   }
 
@@ -302,6 +303,8 @@
 
   .info-card {
     padding: 16px;
+    margin-top: -42px;
+    margin-left: -10px;
     border-radius: 0 14px;
   }
 

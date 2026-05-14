@@ -213,7 +213,7 @@
   }
 
   .footer-logo-name {
-    width: min(220px, 85%);
+    width:  72px;
     height: auto;
   }
 
@@ -242,7 +242,7 @@
   .footer-brand {
     justify-content: flex-start;
     gap: 6px;
-    margin-left: -8px;
+    margin-left: 8px;    
   }
 
   .footer-logo {
@@ -252,14 +252,15 @@
   }
 
   .footer-logo-name {
-    width: min(180px, calc(100% - 58px));
-    height: auto;
+    width: 54px;
+    height: 51px;
     flex: 1 1 auto;
     min-width: 0;
   }
 
   .pf-desc {
     text-align: left;
+    margin-left: 21px;
   }
 
   .pf-title {

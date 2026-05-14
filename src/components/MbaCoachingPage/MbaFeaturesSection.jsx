@@ -5,9 +5,7 @@ function MbaFeaturesSection() {
   return (
     <section className="mba-features">
       <div className="container text-center">
-
         <span className="section-tag">WHY OUR MBA COACHING</span>
-
         <h2 className="section-title">
           Structured Learning + Smart Practice + Interview Readiness
         </h2>
@@ -45,7 +43,6 @@ function MbaFeaturesSection() {
               </div>
             </div>
           ))}
-
         </div>
 
         {/* BOTTOM SECTION */}
@@ -79,7 +76,6 @@ function MbaFeaturesSection() {
                 <li>Live classes available (Online + Offline in Nagpur)</li>
                 <li>Personal 24×7 doubt-solving support</li>
               </ul>
-
             </div>
           </div>
 

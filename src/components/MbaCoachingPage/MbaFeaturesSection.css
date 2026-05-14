@@ -151,10 +151,12 @@
 
   .feature-card {
     padding: 22px;
+
   }
 
   .info-card {
     padding: 24px;
+
   }
 
   .info-card h4 {
@@ -176,8 +178,17 @@
   }
 
   .feature-card {
-    padding: 16px;
+    padding: 12px;
     border-radius: 14px;
+    margin-bottom: 18px;
+  }
+
+  .feature-card h5 {
+    font-size: 1.2rem;
+  }
+
+    .feature-card p {
+    font-size: 0.8rem;
   }
 
   .info-card {

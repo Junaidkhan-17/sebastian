@@ -425,8 +425,9 @@
   }
 
   .course-card {
-    padding: 16px;
+    padding: 6px;
     border-radius: 14px 0;
+    margin-left: s8px;
   }
 
   .course-card h6 {

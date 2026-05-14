@@ -171,7 +171,7 @@
   }
 
   .consultation-title {
-    font-size: clamp(2rem, 5.8vw, 2.2rem);
+    font-size: 2rem;
   }
 
   .consult-card {
@@ -194,7 +194,7 @@
   }
 
   .consultation-title {
-    font-size: clamp(1.55rem, 8.2vw, 1.9rem);
+    font-size: 1.9rem;
   }
 
   .consult-card {

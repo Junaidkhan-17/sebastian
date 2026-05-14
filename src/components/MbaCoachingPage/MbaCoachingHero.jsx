@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./MbaCoachingHero.css";
 import mbacoachinghero from "../../assets/mbacoachinghero.png";
+import mbaimagenew from "../../assets/mbaimagenew.png";
 import googleplay from "../../assets/googleplay.png";
 import appstore from "../../assets/appstore.png";
 
@@ -33,10 +34,10 @@ function MbaHero() {
     <section
       className="mba-hero-section"
       style={{
-        backgroundImage: `url(${mbacoachinghero})`,
-        backgroundSize: "cover",
+        backgroundImage: `url(${mbaimagenew})`,
+        backgroundSize: "100% 100%",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "center 70%",
+        backgroundPosition: "center center",
       }}
     >
       <div className="mba-overlay"></div>
@@ -47,7 +48,7 @@ function MbaHero() {
             <h1 className="mba-hero-title">
             <span>Sebastian Sir </span><br/>
              <h6 className="title-two">MBA COACHING CLASSES.</h6><br/>
-            <span><h6 className="span-one">Learn</h6> , <h6 className="span-one">Practice</h6><h className="and"> &</h> <h6 className="span-one">Execute</h6></span>
+             <h6 className="span-one">Learn</h6> , <h6 className="span-one">Practice</h6><h className="and"> &</h> <h6 className="span-one">Execute</h6>
             </h1>
 
             <p className="mba-hero-desc">
@@ -94,44 +95,7 @@ function MbaHero() {
             
           </div>
 
-          <div className="col-lg-5">
-            <div className="mba-hero-panel">
-              <div className="mba-panel-head">
-                <h3>Performance Dashboard</h3>
-                <span>Live Preparation Track</span>
-              </div>
-
-              <div className="mba-metric-grid">
-                <div>
-                  <h4>{testsCount}+</h4>
-                  <p>Practice Tests</p>
-                </div>
-                <div>
-                  <h4>{questionsCount}k+</h4>
-                  <p>Questions Solved</p>
-                </div>
-                <div>
-                  <h4>{mentorCount}:1</h4>
-                  <p>Mentor Support</p>
-                </div>
-              </div>
-
-              <ul className="mba-roadmap">
-                <li>
-                  <span className="step-dot"></span>
-                  Foundation building with quant and verbal drills
-                </li>
-                <li>
-                  <span className="step-dot"></span>
-                  Exam-level mocks with sectional strategy reviews
-                </li>
-                <li>
-                  <span className="step-dot"></span>
-                  Final sprint with profile and interview readiness
-                </li>
-              </ul>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>

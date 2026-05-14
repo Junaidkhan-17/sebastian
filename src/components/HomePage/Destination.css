@@ -296,11 +296,11 @@
 }
 
 @media (max-width: 480px) {
-  .dest-title-two {
+  .dest-title {
     font-size: 24px;
   }
 
-  .dest-sub-two {
+  .dest-sub {
     font-size: 14px;
   }
 
@@ -321,4 +321,25 @@
     gap: 14px;
     animation-duration: 28s;
   }
+  .flag-item {
+    width: 130px;
+  }
+
+  .flag-track {
+    gap: 14px;
+    animation-duration: 28s;
+  }
+
+  .circle-img {
+    width: 115px;
+    height: 115px;    
+  }
+  .flag-name {
+    font-size: 0.9rem;
+  }
+
+  .flag-item-two:hover .circle-img-two {
+  transform: scale(1.04);
+  box-shadow: 0 16px 30px rgba(13, 59, 102, 0.22);
+}
 }

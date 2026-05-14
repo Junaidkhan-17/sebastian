@@ -1,12 +1,11 @@
 .mba-hero-section {
   position: relative;
   overflow: hidden;
-  min-height: 112vh;
+  min-height: 100%;
   display: flex;
   align-items: center;
   padding: 90px 0;
-  margin-top: -88px;
-
+  margin-top: -18px;
 }
 
 .mba-overlay {
@@ -34,20 +33,22 @@
     repeating-linear-gradient(
       -45deg,
       rgba(255, 255, 255, 0.05) 0 2px,
-      rgba(255, 255, 255, 0) 2px 18px
+      rgba(255, 255, 255, 0) 2px 18px,
     );
 }
 
 .mba-hero-container {
   position: relative;
   z-index: 2;
-  margin-left: -28px;
+  margin-left: 0;
 }
 
 .span-one {
-  font-size: 2.5rem;
-  white-space: nowrap;
+  font-size: 2.2rem;
+  white-space: normal;
   display: inline-block;
+  color: gold;
+  margin-top: -12px;
 }
 
 .and {
@@ -58,7 +59,7 @@
 .mba-hero-title {
   margin: 18px 0 14px;
   color: #ffffff;
-  font-size: 3.35rem;
+  font-size: clamp(2rem, 5vw, 3.35rem);
   line-height: 1.15;
   font-weight: 700;
   font-family: "CabinetGrotesk", sans-serif;
@@ -66,13 +67,13 @@
 }
 
 .title-two {
-  font-size: 2.5rem;
-  margin-bottom: -60px;
+  font-size: clamp(1.3rem, 3.6vw, 2.5rem);
+  margin-bottom: -85px ;
 }
 
 .mba-hero-title span {
   color: gold;
-  font-size: 5rem;
+  font-size: clamp(2.1rem, 7vw, 5rem);
 }
 
 .mba-hero-desc {
@@ -146,12 +147,12 @@
 
 .mba-hero-chips {
   display: flex;
-  flex-wrap: nowrap;
-  gap: 6px;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: 1rem;
   width: 100%;
-  justify-content: space-between;
-  overflow-x: visible;
+  justify-content: flex-start;
+  overflow-x: hidden;
 }
 
 .mba-hero-chips span {
@@ -163,10 +164,10 @@
   background: rgba(255, 255, 255, 0.11);
   border: 1px solid rgba(255, 255, 255, 0.24);
   color: #eaf4ff;
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   border-top: #ff8a00 solid 2px;
   border-right: #ff8a00 solid 2px;
-  white-space: nowrap;
+  white-space: normal;
 
 }
 
@@ -273,18 +274,46 @@
 
 @media (max-width: 991.98px) {
   .mba-hero-section {
-    margin-top: 0;
+    margin-top: -35px;
     min-height: auto;
     padding-top: calc(var(--mobile-navbar-offset, 86px) + 24px);
     padding-bottom: 72px;
+    margin-right: -10px;
+    background-position: left top;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+
+  }
+
+  .mba-hero-container {
+    margin-left: 0;
   }
 
   .mba-hero-title {
-    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+
+  .title-two {
+  margin-bottom: -35px ;
+  }
+
+  .span-one,
+  .and {
+    font-size: clamp(1.2rem, 4.2vw, 1.8rem);
   }
 
   .mba-hero-actions {
     margin-bottom: 28px;
+  }
+
+  .app,
+  .app-two {
+    width: 56px;
+    margin-right: 14px;
+  }
+
+  .mba-hero-chips span {
+    font-size: 0.8rem;
   }
 }
 
@@ -295,11 +324,18 @@
   }
 
   .mba-hero-title {
-    font-size: 1.9rem;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    line-height: 1.25;
+  }
+
+    .title-two {
+  margin-bottom: -35px ;
   }
 
   .mba-hero-desc {
     font-size: 0.95rem;
+    margin-bottom: 18px;
   }
 
   .mba-hero-actions {
@@ -311,6 +347,29 @@
   .mba-btn-ghost {
     width: 100%;
     justify-content: center;
+  }
+
+  .app-head {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .app {
+    width: 48px;
+  }
+  .app-two {
+    width: 48px;
+    margin-right: 10px;
+  }
+
+  .mba-hero-chips {
+    gap: 8px;
+  }
+
+  .mba-hero-chips span {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 7px 10px;
   }
 }
 
@@ -328,7 +387,7 @@
 }
 
 .app-head {
-    margin-top: 5px;
+  margin-top: 5px;
   color: white;
   font-size: 1.2rem;
 }
