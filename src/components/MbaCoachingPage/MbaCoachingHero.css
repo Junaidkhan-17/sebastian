@@ -155,6 +155,19 @@
   overflow-x: hidden;
 }
 
+@media (min-width: 576px) {
+  .mba-hero-chips {
+    flex-wrap: nowrap;
+    overflow-x: visible;
+  }
+
+  .mba-hero-chips span {
+    flex: 1 1 0;
+    min-width: 0;
+    white-space: normal;
+  }
+}
+
 .mba-hero-chips span {
   display: inline-flex;
   align-items: center;
