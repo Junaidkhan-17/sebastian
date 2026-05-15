@@ -21,7 +21,7 @@ function MbbsConclusion() {
 
             {/* Text */}
             <p>
-              Vishwa Medical Admission Point has years of expertise in the area of medical education.
+              Sebastian Sir has years of expertise in the area of medical education.
               They have been successful in helping students choose the right college at the right time,
               keeping in mind their merits and distinctions.
             </p>
@@ -45,12 +45,16 @@ function MbbsConclusion() {
 
               <div className="contact-item">
                 <i className="bi bi-telephone-fill"></i>
-                <span>+91 99704 44580</span>
+                <span>+91 9511926359</span>
+              </div>
+              <div className="contact-item">
+                <i className="bi bi-telephone-fill"></i>
+                <span>+91 9172126359</span>
               </div>
 
               <div className="contact-item">
                 <i className="bi bi-envelope-fill"></i>
-                <span>info@vmap.co.in</span>
+                <span>Sebastian.institute.edu@gmail.com</span>
               </div>
 
             </div>

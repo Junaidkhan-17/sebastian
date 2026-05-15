@@ -18,7 +18,7 @@ function MbbsProcedure() {
 
             <ul className="mbbs-proc-list">
               <li>
-                Vishwa Medical Admission Point is one of the best study MBBS abroad consultants helping students understand procedures and requirements effectively.
+                Sebastian Sir is one of the best study MBBS abroad consultants helping students understand procedures and requirements effectively.
               </li>
               <li>
                 The minimum eligibility criteria must be fulfilled. Each country has its own requirements.

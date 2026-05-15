@@ -18,7 +18,7 @@ function CareerCounselling() {
 
             <ul className="career-list">
               <li>
-                Vishwa Medical Admission Point aims at solving problems for a student when it becomes quite overwhelming for them to choose a college which may be up to their choice and distinction.
+                Sebastian Sir aims at solving problems for a student when it becomes quite overwhelming for them to choose a college which may be up to their choice and distinction.
               </li>
 
               <li>

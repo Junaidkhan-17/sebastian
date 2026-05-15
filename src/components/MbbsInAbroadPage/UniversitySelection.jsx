@@ -17,7 +17,7 @@ function UniversitySelection() {
             </h4>
 
             <p>
-              In many cases, even though the career has been decided, students usually fail to find a college that matches up to their caliber. Vishwa Medical Admission Point helps in giving students multiple options of universities where they can study MBBS in India or abroad.
+              In many cases, even though the career has been decided, students usually fail to find a college that matches up to their caliber. Sebastian sir helps in giving students multiple options of universities where they can study MBBS in India or abroad.
             </p>
 
             <p>

@@ -44,7 +44,7 @@ function MbbsFactors() {
               <div className="col-lg-5">
                 <div className="mbbs-factor-highlight">
                   <p>
-                    The best part about Vishwa Medical Admission Point is that they reduce
+                    The best part about Sebastian Sir is that they reduce
                     the stress of choosing the right college. Through expert counselling
                     and evaluation, they help students secure admission in top medical
                     colleges based on their strengths and potential.
