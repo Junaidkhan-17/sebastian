@@ -264,6 +264,30 @@
     border-radius: 14px;
   }
 
+    .pgdm-hex-large{
+    margin-right: 7rem;
+    right: 200px;
+    width: 180px;
+    height: 210px;
+  }
+
+  .pgdm-hex-bottom {
+    bottom: 57px;
+    margin-left: 130px;
+    margin-bottom: -70px;
+    margin-top: -90px;
+    width: 290px;
+    height: 320px;
+  }
+
+  .pgdm-hex-small {
+    bottom: 0rem;
+    margin-top: -2rem;
+    margin-right: 130px;
+    width: 270px;
+    height: 300px;
+  }
+
   .hero-features .feature-item {
     flex: 1 1 calc(50% - 12px);
     min-width: 220px;
@@ -306,5 +330,28 @@
     min-width: 100%;
     font-size: 0.9rem;
   }
+
+  .pgdm-hex-large{
+    bottom: 10.5rem;
+    right: 200px;
+    width: 180px;
+    height: 210px;
+  }
+
+  .pgdm-hex-bottom {
+    bottom: 37px;
+    left: 240px;
+    width: 290px;
+    height: 320px;
+  }
+
+  .pgdm-hex-small {
+    bottom: 0rem;
+    top: 12.5rem;
+    right: 270px;
+    width: 270px;
+    height: 300px;
+  }
+
 }
 
