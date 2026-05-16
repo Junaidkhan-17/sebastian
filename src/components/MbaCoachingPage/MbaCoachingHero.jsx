@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./MbaCoachingHero.css";
 import mbacoachinghero from "../../assets/mbacoachinghero.png";
 import mbaimagenew from "../../assets/mbaimagenew.png";
+import mbaone from "../../assets/mbaone.png";
 import googleplay from "../../assets/googleplay.png";
 import appstore from "../../assets/appstore.png";
 
@@ -34,7 +35,7 @@ function MbaHero() {
     <section
       className="mba-hero-section"
       style={{
-        backgroundImage: `url(${mbaimagenew})`,
+        backgroundImage: `url(${mbaone})`,
         backgroundSize: "100% 100%",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
